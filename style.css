@@ -50,8 +50,8 @@ p {
   }
   
   .modal_content_profil{
-    background-color: #1d3354;
-    color: #fff;
+    background-color:var(--main-color);
+    color: var(--text-color);
     margin: 20% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -111,14 +111,14 @@ p {
   }
   
   .logoreseaux1 a, .logoreseaux2 a, .logoreseaux3 a{
-    color: #90d8f6;
+    color:var(--second-color);
     text-decoration: none;
-    background-color: #1d3354;
+    background-color:var(--main-color);
   }
   
   .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
     font-size: 3rem;
-    background: #1d3354;
+    background:var(--main-color);
     padding: 0.3rem;
   }
   
@@ -146,7 +146,7 @@ p {
   }
   
   .description_profil_modal h3, .project_profil_modal h3{
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-top: 1rem;
     margin-bottom: 0rem;
     text-decoration: underline; 
@@ -184,8 +184,8 @@ p {
     }
    
     .modal_content_profil{
-      background-color: #1d3354;
-      color: #fff;
+      background-color:var(--main-color);
+      color:var(--text-color);
       margin: 20% auto;
       padding: 1.2rem;
       border: 1px solid #888;
@@ -214,6 +214,6 @@ p {
       text-decoration: underline; 
     }
     .description_profil_modal p, .project_profil_modal p{
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     }
