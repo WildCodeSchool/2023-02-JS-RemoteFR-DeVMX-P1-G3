@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
 
 * {
-
     box-sizing: border-box;
     --main-color: #1d3354;
     --second-color: #90d8f6;
@@ -33,6 +32,16 @@ h2 {
 
 h3 {
     font-size: 2rem;
+    color: var(--text-color);
+}
+
+h2 {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+h3 {
+    font-size:  2rem;
     color: var(--text-color);
 }
 
