@@ -2,7 +2,7 @@
   "name": "2023-02-js-remotefr-devmx-p1-g3",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "validator.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

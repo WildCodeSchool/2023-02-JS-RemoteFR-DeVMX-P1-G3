@@ -8,8 +8,10 @@
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
 }
-/*
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -70,10 +72,22 @@ p {
 
 header {
     width: 100%;
-    height: 20rem;
+    height: 30rem;
     background-image: url("https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg");
     background-size: cover;
     background-position: top;
+}
+
+
+
+header h1{
+  font-size: 3rem;
+  color: var(--text-color);
+  margin: 0;
+  text-align: center;
+  position:relative;
+  top: 1.1rem;
+  text-shadow: 1px 1px 2px var(--main-color);
 }
 
 .bannerContainer {
@@ -81,104 +95,130 @@ header {
     flex-direction:column;
     align-items: center;
 }
-
-@media screen and (min-width: 1024px) {
-    h1 {
-        font-size: 4.5rem ;
-    }
+.infoNextmoveContainer{
+  display: flex;
+  flex-direction: column;
+  height: 6rem;
+  
 }
 
 .bannerLogoContainer {
-    display:flex;
-    margin-left: 6rem;
+  display:flex;
+  margin-left: 6rem;
 }
 
 .logoNextmoveBanner {
-   margin: auto;
-   width: 11rem
-}
-
-@media screen and (min-width: 1024px){
-    .logoNextmoveBanner {
-        width: 15rem;
-    }
+  margin: auto;
+  width: 11rem
 }
 
 .textBanner {
-    margin: auto;
-    font-size: 1rem;
-    color: var(--main-color);
-    font-weight: bold;
+  margin: auto;
+  font-size: 1rem;
+  color: var(--main-color);
+  font-weight: bold;
 }
 
-@media screen and (min-width: 1024px) {
-    .textBanner {
-        font-size: 2rem;
-        color: var(--text-color);
-    }
-}
-
-@media screen and (min-width:1024px) {
-    .infoNextmoveContainer {
-        display:flex;
-    }
+.entrepriseContainer{
+  height: 5rem;
 }
 
 #blueRectangle {
-    background-color: #1D3354;
-    width: 100%;
-    max-height: 180px;
-    background: rgba(29, 51, 84, 0.7);
-    position: relative;
-    top: 1.2rem;
-}
-
-@media screen and (min-width: 1024px) {
-    #blueRectangle {
-        max-height: 127px;
-    }
+  background-color: #1D3354;
+  width: 100%;
+  max-height: 180px;
+  background: rgba(29, 51, 84, 0.7);
+  position: relative;
+  top: 6.2rem;
 }
 
 .secondLogoNextmove {
-    width: 12rem;
-    position:relative;
-    bottom: 10.4rem;
-    left:1rem;
-}
-
-@media screen and (min-width:1024px) {
-    .secondLogoNextmove {
-        width: 16rem;
-        bottom:5.2rem;
-    }
+  width: 12rem;
+  position:relative;
+  bottom: 10rem;
+  left:1rem;
 }
 
 .aboutNextmove {
-    position:relative;
-    bottom: 11rem;
-    margin: 0 2rem;
-    font-size: 0.8rem;
-}
-
-@media screen and (min-width: 1024px) {
-    .aboutNextmove {
-        font-size: 1.2rem;
-        bottom: 5rem;
-    }
+  position:relative;
+  bottom: 11rem;
+  margin: 0 2rem;
+  font-size: 0.8rem;
 }
 
 .nosJeunesTalents {
-    font-size: 1.5rem;
-    color: var(--main-color);
-    display:flex;
-    justify-content: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: var(--main-color);
+  display:flex;
+  justify-content: center;
 }
 
-@media screen and (min-width:1024px) {
-    .nosJeunesTalents {
-        font-size: 2.4rem;
-    }
+@media screen and (min-width: 768px) {
+  .infoNextmoveContainer{
+      display: flex;
+      flex-direction: row;
+  }
+
+  h1 {
+      font-size: 4.5rem ;
+  }
+  #blueRectangle {
+    max-height: 120px;
+    top: 10rem;
 }
+  .secondLogoNextmove {
+    
+    width: 15rem;
+    bottom:2rem;
+}
+  .aboutNextmove {
+    
+    font-size: 0.9em;
+    bottom: -3.5rem;
+}
+  .nosJeunesTalents {
+    font-size: 3rem;
+    margin-top: 8rem;
+}
+}
+
+@media screen and (min-width: 1024px) {
+    header h1 {
+        font-size: 6rem ;
+    }
+    .logoNextmoveBanner {
+      width: 15rem;
+    }
+    .bannerLogoContainer {
+      margin-left: 20rem;
+    }
+    .textBanner {
+      font-size: 2rem;
+      color: var(--text-color);
+    }
+    .infoNextmoveContainer {
+      display:flex;
+    }
+    #blueRectangle {
+      max-height: 127px;
+      top: 5rem;
+    }
+    .secondLogoNextmove {
+      width: 16rem;
+      bottom:8rem;
+    }
+    .aboutNextmove {
+      font-size: 1.2rem;
+      bottom: 2rem;
+    }
+    .nosJeunesTalents {
+      font-size: 5rem;
+      margin-top: 8rem;
+    }
+  }
+
+
 
 /* ****************************************************** */
 
@@ -382,8 +422,8 @@ header {
 /*************************Modal Profil *************************/
 
 .modal {
-  display: block; /* Hidden by default */
-  position: absolute; /* Stay in place */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
   top: 0;
@@ -609,11 +649,11 @@ header {
 }
 
 .mainFormBody {
+    display: none;
     border-radius: 10px;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
     
-
 }
 
 .mainForm {
@@ -730,9 +770,9 @@ textarea#message {
 
 footer {
   background-color: #1d3354;
-  position: absolute;
+  position: relative;
   width: 100%;
-  bottom: 0;
+  bottom:0;
   left: 0;
   right: 0;
   height: auto;
@@ -817,7 +857,8 @@ footer {
     list-style: none;
     width: 100%;
     height: 7rem;
-    position: absolute;
+    position: relative;
+    margin-top: 10rem;
     bottom: 0;
     left: 0;
     right: 0;
