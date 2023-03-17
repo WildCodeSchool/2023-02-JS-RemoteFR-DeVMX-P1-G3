@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap%27');
 
 * {
-    
     box-sizing: border-box;
     --main-color: #1d3354;
     --second-color: #90d8f6;
@@ -15,7 +14,24 @@ body {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
+    color: var(--text-color);
+    margin: 0;
+    text-align: center;
+    position:relative;
+    top: 1.1rem;
+    text-shadow: 1px 1px 2px var(--main-color);
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    text-align: center;
+    
+}
+
+h3 {
+    font-size: 2rem;
     color: var(--text-color);
 }
 
@@ -30,10 +46,125 @@ h3 {
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     color: var(--text-color);
 }
 
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 20rem;
+    background-image: url("https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg");
+    background-size: cover;
+    background-position: top;
+}
+
+.bannerContainer {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 4.5rem ;
+    }
+}
+
+.bannerLogoContainer {
+    display:flex;
+    margin-left: 6rem;
+}
+
+.logoNextmoveBanner {
+   margin: auto;
+   width: 11rem
+}
+
+@media screen and (min-width: 1024px){
+    .logoNextmoveBanner {
+        width: 15rem;
+    }
+}
+
+.textBanner {
+    margin: auto;
+    font-size: 1rem;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+    .textBanner {
+        font-size: 2rem;
+        color: var(--text-color);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .infoNextmoveContainer {
+        display:flex;
+    }
+}
+
+#blueRectangle {
+    background-color: #1D3354;
+    width: 100%;
+    max-height: 180px;
+    background: rgba(29, 51, 84, 0.7);
+    position: relative;
+    top: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    #blueRectangle {
+        max-height: 127px;
+    }
+}
+
+.secondLogoNextmove {
+    width: 12rem;
+    position:relative;
+    bottom: 10.4rem;
+    left:1rem;
+}
+
+@media screen and (min-width:1024px) {
+    .secondLogoNextmove {
+        width: 16rem;
+        bottom:5.2rem;
+    }
+}
+
+.aboutNextmove {
+    position:relative;
+    bottom: 11rem;
+    margin: 0 2rem;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .aboutNextmove {
+        font-size: 1.2rem;
+        bottom: 5rem;
+    }
+}
+
+.nosJeunesTalents {
+    font-size: 1.5rem;
+    color: var(--main-color);
+    display:flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:1024px) {
+    .nosJeunesTalents {
+        font-size: 2.4rem;
+    }
+}
+
+/* ****************************************************** */
 
 /***********************************cards******************************************/
 .card-profil{
