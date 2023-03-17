@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,122 @@
 
     <link rel="stylesheet" type="text/css" href="style.css"> 
     <script src="https://kit.fontawesome.com/a65e31546e.js" crossorigin="anonymous"></script>
+       
     <title>NextBook</title>
 </head>
+
 <body>
+       
 
+    <!-- HEADER -->
+    <header>
+        <div class="bannerContainer">
+        <h1>NextBook</h1>
+            <div class="bannerLogoContainer">
+                <p class="textBanner">by</p>
+                <img class="logoNextmoveBanner" src="https://assets.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e22f229af9f6aa76268_NextmoveDefault.svg" alt="logo de l'entreprise fictive Nextmove">
+            </div>
+        </div>
 
-  <div id="modal1" class="modal">
+        <div>
+            <canvas id="blueRectangle"></canvas>
+            <div class="infoNextmoveContainer">
+            <img class="secondLogoNextmove" src="https://assets.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e22f229af9f6aa76268_NextmoveDefault.svg" alt="logo de l'entreprise fictive Nextmove">
+            <p class="aboutNextmove"> Nextmove est une entreprise fictive, leader du recrutement en France. Nous avons créé le NextBook afin de vous faire découvrir les nouveaux talents du domaine du développement web. Consultez les profils de nos jeunes recrues et contactez les dans l'espoir d'être leur next move ! </p>
+            </div>
+        </div>
+    </header>
+<h2 class="nosJeunesTalents">Nos jeunes talents</h2>
+    <!-- **************************************************************************** -->
+  
+<!--Caroussel-->
+  <div class="carrousel-block">
+    <i class="button" id="previous-btn">&#8249;</i>
+      <ul class="gallery">
+        <li class="card-container">
+          <div class="card-profil card-profil-1" draggable="false">
+          <img class="image-profil" src="image/Nicolas1.png"  alt="">
+          <div class="description-profil">
+              <h2 class="title-profil">Nicolas Lopes</h2>
+              <div class="divider_card"></div>
+              <p class="text-profil">Fédérateur, engagé et disponible                                  
+                Nicolas met à profit son savoir-faire pour atteindre les objectif fixés
+                </p>
+          </div>
+          <button id="btn_open1" class="btn">More</button>
+      </div>
+    </li>
+        <li class="card-container">
+          <div class="card-profil card-profil-2" draggable="false">
+            <img src="image/Photo Charlotte.jpg"  alt="">
+            <div class="description-profil">
+              <h2 class="title-profil">Charlotte Charrier</h2>
+              <div class="divider_card"></div>
+              <p class="text-profil">Dynamique, motivée et curieuse j'adore travailler en groupe. Cela me pousse à donner le meilleur de moi-même et mener le projet encore plus loin !                              
+                </p>  
+            </div>
+            <button id="btn_open2" class="btn">More</button>
+        </div>
+          </li>
+        <li class="card-container">
+          <div class="card-profil card-profil-3" draggable="false">
+            <img src="image/Alaric.png"  alt="">
+            <div class="description-profil">
+              <h2 class="title-profil">Alaric Henrot</h2>
+              <div class="divider_card"></div>
+              <p class="text-profil">                                 
+                Tenace, rigoureux et toujours très impliqué dans ce que je fais, je ne ménage pas mes efforts pour obtenir des résultats.
+                </p>
+            </div>
+            <button id="btn_open3" class="btn">More</button>
+        </div>
+          </li>
+        <li class="card-container">
+          <div class="card-profil card-profil-4" draggable="false">
+            <img src="image/Nicolas1.png"  alt="">
+            <div class="description-profil">
+              <h2 class="title-profil">Anne Louis</h2>
+              <div class="divider_card"></div>
+              <p class="text-profil">Fédérateur, engagé et disponible                                  
+                Nicolas met à profit son savoir-faire pour atteindre les objectif fixés
+                </p>
+            </div>
+            <button id="btn_open4" class="btn">More</button>
+        </div>
+          </li>
+        <li class="card-container">
+          <div class="card-profil card-profil-5" draggable="false">
+            <img src="image/jean-Baptiste.png"  alt="">
+            <div class="description-profil">
+              <h2 class="title-profil">Jean-Baptiste Noiraud</h2>
+              <div class="divider_card"></div>
+              <p class="text-profil">Motivé et toujours impliqué dans mon travail afin d'atteindre mon objectif. Le travail en groupe me permet d'avoir un autre point de vue sur moi.                                
+                </p>
+            </div>
+            <button id="btn_open5" class="btn">More</button>
+        </div>
+          </li>
+        <li class="card-container">
+          <div class="card-profil card-profil-6" draggable="false">
+            <img src="image/Nicolas1.png"  alt="">
+            <div class="description-profil">
+              <h2 class="title-profil">Antoine Gash</h2>
+              <div class="divider_card"></div>
+              <p class="text-profil">Fédérateur, engagé et disponible                                  
+                Nicolas met à profit son savoir-faire pour atteindre les objectif fixés
+                </p>
+            </div>
+            <button id="btn_open6" class="btn">More</button>
+        </div>
+          </li>
+      </ul>
+    <i class="button" id="next-btn">&#8250;</i>
+  </div>
+    <!-- Carrousel-->
+    
+    <!--Modal profil -->
+    
+    <div id="modal1" class="modal">
     <div class="modal_content_profil">
       <span id="btn_close1" class="close" >&times;</span>
       <div class="container_head_profil">
@@ -279,8 +390,79 @@
     </div>
   </div>
 
- 
-    <script src="script.js"></script>
-</body>
+    
+    
+    <!--Form -->
+    <div class="mainFormBody">
+        <div class="mainForm"> 
+                
+            <span class="close">&times;</span>
 
+            <h3>Formulaire de contact</h3>
+            <div class="form">
+                    
+                <div class="nameFirstname">
+                    <div class="name">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Tapez votre nom" required id="name" />
+                    </div class="name">
+
+                    <div class="firstname">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" placeholder="Tapez votre prénom" required id="name" />
+                    </div class="firstname">
+                </div class="nameFirstname">
+
+                <div class="Email">
+                    <label for="email">E-mail</label>
+                    <input type="text" placeholder="Tapez votre adresse E-mail" required id="email" />
+                </div class="Email">
+
+                <div class="objet">
+                    <label for="objet">Objet</label>
+                    <input type="objet" placeholder="Tapez l'objet de votre message" id="objet" />
+                </div class="Email">
+
+                <div class="Message">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Tapez votre message"></textarea>
+                </div class="Message">
+
+                <div class="Button">
+                    <button type="submit">ENVOYER</button>   
+                </div class="Button">
+
+            </div class="form">
+                
+        </div class="mainForm">
+    <div class="mainFormBody">
+  
+    <!--footer start here-->
+    <footer>
+      <div class="footer-head">
+        <img
+          src="assets/LOGO_WILDCODESCHOOL1000-1024x1024.png"
+          alt="Logo Wild Code School"
+        />
+      </div>
+      <div class="li-name">
+        <h4>Next Book 2023</h4>
+        <ul clas="ul-name">
+          <li class="name">Alaric HENROT</li>
+          <li class="name">Anne LOUIS</li>
+          <li class="name">Antoine GACH</li>
+          <li class="name">Charlotte CHARRIER</li>
+          <li class="name">Nicolas LOPES</li>
+          <li class="name">Jean-Baptiste NOIRAUD</li>
+        </ul>
+        <a class="contact" href="">CONTACTEZ - NOUS</a>
+      </div>
+    </footer>
+    <!--footer end here-->
+
+
+<script src="script.js"></script>
+</body>
 </html>
+
+
