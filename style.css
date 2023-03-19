@@ -446,7 +446,7 @@ header h1{
   height:48rem ;
 }
 
-.close{
+.close_modal_profil{
   color: #90d8f6;
   float: right;
   font-size: 38px;
@@ -454,8 +454,8 @@ header h1{
   margin-top: -1rem;
 }
   
-.close:hover,
-.close:focus
+.close_modal_profil:hover,
+.close_modal_profil:focus
  {
   color: black;
   text-decoration: none;
@@ -666,7 +666,7 @@ header h1{
 /********************************** Form ***************************************************/
 
 
-.close {
+.close{
     color: #90d8f6;
     float: right;
     font-size: 38px;
