@@ -35,25 +35,25 @@ slider.addEventListener('mousemove', e => {
 
 /*****************************modal1********************************* */
 
-let modalProfil = document.querySelectorAll(".modal");
-let closeModalProfil = document.querySelectorAll(".close_modal_profil");
-let btnModalProfil = document.querySelectorAll(".btn_open_profil");
+const modalProfil = document.querySelectorAll('.modal');
+const closeModalProfil = document.querySelectorAll('.close_modal_profil');
+const btnModalProfil = document.querySelectorAll('.btn_open_profil');
 
-btnModalProfil.forEach(function (btn) {
-    btn.onclick = (function () {
-        let modal = btn.getAttribute("data-target");
-        document.getElementById(modal).style.display = "block";
+btnModalProfil.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modal = btn.getAttribute('data-target');
+        document.getElementById(modal).style.display = 'block';
     });
 });
-closeModalProfil.forEach(function(btn) {
-    btn.onclick = function() {
-        let modal = (btn.closest(".modal").style.display = "none");
+closeModalProfil.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let modal = (btn.closest('.modal').style.display = 'none');
         
-    };
+    });
 });
 
 window.onclick = function (e){
-    if (e.target.className === "modal"){
-        e.target.style.display = "none";
+    if (e.target.className === 'modal'){
+        e.target.style.display = 'none';
     }
 };
