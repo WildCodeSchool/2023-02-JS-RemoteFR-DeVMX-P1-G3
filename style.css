@@ -459,22 +459,24 @@ header h1{
 .modal_content_profil{
   background-color:#1d3354;
   color:#fff;
-  margin: 20% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #90d8f6;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
+  height:48rem ;
 }
 
-.close{
+.close_modal_profil{
   color: #90d8f6;
   float: right;
   font-size: 38px;
   font-weight: bold;
+  margin-top: -1rem;
 }
   
-.close:hover,
-.close:focus
+.close_modal_profil:hover,
+.close_modal_profil:focus
  {
   color: black;
   text-decoration: none;
@@ -486,8 +488,8 @@ header h1{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-  padding-left: 1.2rem;
+  padding-left: 2.5rem;
+  
 }
 
 .picture_profil_modal{
@@ -495,19 +497,22 @@ header h1{
   justify-content: center; 
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  
 }
 
 .picture_profil_modal img {
+  margin-top: 2rem;
   margin-right: 1.2rem;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
 }
 
 .picture_profil_modal h2{
-  font-size: 2rem;
+  width: 20rem;
+  font-size: 1.5rem;
   margin-right: 1.2rem;
+  text-align: center;
 }
  
 .container_icons {
@@ -535,10 +540,9 @@ header h1{
   display: flex;
   margin-left: 2.1rem;
   padding-right: 2.1rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin-top: 1.5rem;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 
 .divider_modal::before,
@@ -549,42 +553,70 @@ header h1{
   background-color: #90d8f6;
 }
 
-.description_profil_modal,.project_profil_modal{
-  padding: 0 2rem;
-}
+
 
 .description_profil_modal h3, .project_profil_modal h3{
-  font-size: 2rem;
-  margin-top: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0rem;
   text-decoration: underline; 
 }
 
 .description_profil_modal p, .project_profil_modal p{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+}
+@media screen and (min-width:576px){
+  .modal_content_profil{
+    height: 45rem;
+  }
+  
+  .picture_profil_modal img {
+    margin-top: 0rem;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .picture_profil_modal h2{
+    font-size: 2rem;
+    width: 25rem;
+    
+  }
+  .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
+    font-size: 3.5rem;
+  }
+  .description_profil_modal h3, .project_profil_modal h3{
+    font-size: 1.2rem;
+  }
+  .description_profil_modal p, .project_profil_modal p{
+    font-size: 0.9rem;
+  }
 }
 
-@media screen and (min-width:745px){
+@media screen and (min-width:768px){
 
+  .modal_content_profil{
+    height: 58rem;
+  }
   .container_head_profil{
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .picture_profil_modal{
- 
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     width: 100%;
   
   }
   .picture_profil_modal img {
+    width: 10rem;
+    height: 10rem;
     margin-right: 1.2rem;
   }
   .picture_profil_modal h2{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .container_icons{
-    width: 5rem;
+    width: 4rem;
   }
 
   .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
@@ -593,21 +625,8 @@ header h1{
     padding: 1rem;
   }
 
-  .modal_content_profil{
-   
-   
-    margin: 5rem auto;
-    padding: 1.2rem;
-    width: 70%; 
-  }
-
   .divider_modal{
-    margin-left: 2.5rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    width: 85%;
+    width: 95%;
   }
 
   .description_profil_modal, .project_profil_modal{
@@ -615,8 +634,8 @@ header h1{
     margin-left: 2rem;
   }
   .description_profil_modal h3, .project_profil_modal h3{
-    font-size: 2rem;
-    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 0rem;
     text-decoration: underline; 
   }
@@ -625,7 +644,12 @@ header h1{
   }
   }
 
-  @media screen and (min-width: 1045px){
+  @media screen and (min-width:992px){
+    .modal_content_profil{
+      height: 50rem;
+    
+    }
+
     .picture_profil_modal{
       flex-direction: row;
       display: flex;
@@ -633,30 +657,36 @@ header h1{
       align-items: center;
       margin-bottom: 0rem;
       width: 100%;
-      padding-left: 2rem;
   }
-     
-    .picture_profil_modal h2{
-      font-size: 3rem;
-      margin-left: 2rem;
-      width: 50rem;
+  .picture_profil_modal h2{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    width: 50rem;
+    text-align: left;
+}
+  
+  .container_icons{
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+  }
+  @media screen and (min-width:1200px){
+    .modal_content_profil{
+      height: 48rem;
+      max-height: 70rem;
+      max-width: 70rem;
+    }
   }
 
-    .container_icons{
-      display: flex;
-      flex-direction: column;
-      width: 5rem;
-      margin-right: 5rem;
-  }
-    .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
-      font-size: 4rem;
-  }
-  }
+
 
 /********************************** Form ***************************************************/
 
 
-.close {
+.close{
     color: #90d8f6;
     float: right;
     font-size: 38px;
