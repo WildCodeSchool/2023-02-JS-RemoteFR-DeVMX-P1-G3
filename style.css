@@ -301,7 +301,7 @@ header h1{
 	scroll-padding: 1rem;
   margin: auto;
   height: 32rem;
-
+  scrollbar-width: none;
 }
 .gallery::-webkit-scrollbar {
   display: none;
