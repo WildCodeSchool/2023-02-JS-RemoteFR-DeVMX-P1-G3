@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Best website for workers">
 
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script
       src="https://kit.fontawesome.com/a65e31546e.js"
       crossorigin="anonymous"
     ></script>
+
 
     <title>NextBook</title>
   </head>
@@ -19,31 +21,18 @@
     <header>
       <div class="bannerContainer">
         <h1>NextBook</h1>
-        <div class="bannerLogoContainer">
-          <p class="textBanner">by</p>
-          <img
-            class="logoNextmoveBanner"
-            src="https://assets.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e22f229af9f6aa76268_NextmoveDefault.svg"
-            alt="logo de l'entreprise fictive Nextmove"
-          />
+
+            <div class="bannerLogoContainer">
+                <p class="textBanner">by</p>
+                <img class="logoNextmoveBanner" src="/images/Nextmove-Color.webp" alt="logo de l'entreprise fictive Nextmove">
+            </div>
         </div>
       </div>
 
-      <div class="entrepriseContainer">
-        <canvas id="blueRectangle"></canvas>
-        <div class="infoNextmoveContainer">
-          <img
-            class="secondLogoNextmove"
-            src="https://assets.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e22f229af9f6aa76268_NextmoveDefault.svg"
-            alt="logo de l'entreprise fictive Nextmove"
-          />
-          <p class="aboutNextmove">
-            Nextmove est une entreprise fictive, leader du recrutement en
-            France. Nous avons créé le NextBook afin de vous faire découvrir les
-            nouveaux talents du domaine du développement web. Consultez les
-            profils de nos jeunes recrues et contactez les dans l'espoir d'être
-            leur next move !
-          </p>
+
+        <div class="entrepriseContainer">
+            <img class="secondLogoNextmove" src="/images/Nextmove-Color.webp" alt="logo de l'entreprise fictive Nextmove">
+            <p class="aboutNextmove"> Nextmove est une entreprise fictive, leader du recrutement en France. Nous avons créé le NextBook afin de vous faire découvrir les nouveaux talents du domaine du développement web. Consultez les profils de nos jeunes recrues et contactez les dans l'espoir d'être leur next move ! </p>
         </div>
       </div>
     </header>
@@ -56,8 +45,9 @@
       <ul class="gallery">
         <li class="card-container">
           <div class="card-profil card-profil-1" draggable="false">
-            <img class="image-profil" src="images/Nicolas1.png" alt="" />
-            <div class="description-profil">
+
+          <img class="image-profil" src="images/Nicolas1.webp"  alt="Photo profil Nicolas Lopes">
+          <div class="description-profil">
               <h2 class="title-profil">Nicolas Lopes</h2>
               <div class="divider_card"></div>
               <p class="text-profil">
@@ -67,10 +57,14 @@
             </div>
             <button id="btn_open1" class="btn">More</button>
           </div>
-        </li>
+
+          <button id="btn_open1" class="btn_open_profil" data-target="modal1">More</button>
+      </div>
+    </li>
         <li class="card-container">
           <div class="card-profil card-profil-2" draggable="false">
-            <img src="images/Photo Charlotte.jpg" alt="" />
+            <img src="images/Photo-Charlotte1.webp"  alt="Photo profil Charlotte Charrier">
+
             <div class="description-profil">
               <h2 class="title-profil">Charlotte Charrier</h2>
               <div class="divider_card"></div>
@@ -80,12 +74,14 @@
                 projet encore plus loin !
               </p>
             </div>
-            <button id="btn_open2" class="btn">More</button>
-          </div>
-        </li>
+
+            <button id="btn_open2" class="btn_open_profil" data-target="modal2">More</button>
+        </div>
+          </li>
         <li class="card-container">
           <div class="card-profil card-profil-3" draggable="false">
-            <img src="images/Alaric.png" alt="" />
+            <img src="images/Alaric1.webp"  alt="Photo profil Alaric Henrot">
+
             <div class="description-profil">
               <h2 class="title-profil">Alaric Henrot</h2>
               <div class="divider_card"></div>
@@ -94,12 +90,14 @@
                 je ne ménage pas mes efforts pour obtenir des résultats.
               </p>
             </div>
-            <button id="btn_open3" class="btn">More</button>
-          </div>
-        </li>
+
+            <button id="btn_open3" class="btn_open_profil" data-target="modal3">More</button>
+        </div>
+          </li>
         <li class="card-container">
           <div class="card-profil card-profil-4" draggable="false">
-            <img src="images/Nicolas1.png" alt="" />
+            <img src="images/Nicolas1.webp"  alt="Photo profil Anne Louis">
+
             <div class="description-profil">
               <h2 class="title-profil">Anne Louis</h2>
               <div class="divider_card"></div>
@@ -108,12 +106,14 @@
                 savoir-faire pour atteindre les objectif fixés
               </p>
             </div>
-            <button id="btn_open4" class="btn">More</button>
-          </div>
-        </li>
+
+            <button id="btn_open4" class="btn_open_profil" data-target="modal4">More</button>
+        </div>
+          </li>
         <li class="card-container">
           <div class="card-profil card-profil-5" draggable="false">
-            <img src="images/jean-Baptiste.png" alt="" />
+            <img src="images/jean-Baptiste1.webp"  alt="Photo profil Jean-Baptiste Noiraud">
+
             <div class="description-profil">
               <h2 class="title-profil">Jean-Baptiste Noiraud</h2>
               <div class="divider_card"></div>
@@ -123,12 +123,14 @@
                 point de vue sur moi.
               </p>
             </div>
-            <button id="btn_open5" class="btn">More</button>
-          </div>
-        </li>
+
+            <button id="btn_open5" class="btn_open_profil" data-target="modal5">More</button>
+        </div>
+          </li>
         <li class="card-container">
           <div class="card-profil card-profil-6" draggable="false">
-            <img src="images/Nicolas1.png" alt="" />
+            <img src="images/Nicolas1.webp"  alt="Photo profil Antoine Gash ">
+
             <div class="description-profil">
               <h2 class="title-profil">Antoine Gash</h2>
               <div class="divider_card"></div>
@@ -137,9 +139,11 @@
                 savoir-faire pour atteindre les objectif fixés
               </p>
             </div>
-            <button id="btn_open6" class="btn">More</button>
-          </div>
-        </li>
+
+            <button id="btn_open6" class="btn_open_profil" data-target="modal6">More</button>
+        </div>
+          </li>
+
       </ul>
       <i class="button" id="next-btn">&#8250;</i>
     </div>
@@ -147,366 +151,32 @@
 
     <!--Modal profil -->
 
-    <div id="modal1" class="modal">
-      <div class="modal_content_profil">
-        <span id="btn_close1" class="close">&times;</span>
-        <div class="container_head_profil">
-          <div class="picture_profil_modal">
-            <img
-              class="photoNicolas"
-              src="images/Nicolas1.png"
-              alt="photo Nicolas"
-            />
-            <h2>Nicolas LOPES</h2>
-            <div class="container_icons">
-              <div class="logoreseaux1">
-                <a href="https://github.com/SEF936">
-                  <i class="fa-brands fa-square-github"></i>
-                </a>
-              </div>
-              <div class="logoreseaux2">
-                <a href="https://www.linkedin.com/in/nicolas-lopes-21441478">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="logoreseaux3">
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider_modal"></div>
-        <div class="description_profil_modal">
-          <h3>Description</h3>
-          <p>
-            Issu d'une formation commerciale, j'ai su développer en tant que
-            manager dans la grande distribution mon Leadership pour federer et
-            atteindre avec mes équipes les objectifs communs. je suis
-            actuellement en formation diplômante avec « Nextdev » pour devenir
-            Développeur web et web mobile.
-          </p>
-        </div>
-        <div class="divider_modal"></div>
-        <div class="project_profil_modal">
-          <h3>Projet</h3>
-          <p>
-            A l'issue de la formation je souhaiterais intégrer une entreprise en
-            tant que développeur web / web mobile. Pouvoir mettre à disposition
-            mes compétences techniques en html / CSS / JS / React et MySQL ainsi
-            que mes compétences générales. Je suis également ouvert aux
-            propositions de stages.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="modal2" class="modal">
-      <div class="modal_content_profil">
-        <span id="btn_close2" class="close">&times;</span>
-        <div class="container_head_profil">
-          <div class="picture_profil_modal">
-            <img
-              class="photoNicolas"
-              src="images/Photo Charlotte.jpg"
-              alt="photo Nicolas"
-            />
-            <h2>Charlotte Charrier</h2>
-            <div class="container_icons">
-              <div class="logoreseaux1">
-                <a href="https://github.com/SEF936">
-                  <i class="fa-brands fa-square-github"></i>
-                </a>
-              </div>
-              <div class="logoreseaux2">
-                <a href="https://www.linkedin.com/in/nicolas-lopes-21441478">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="logoreseaux3">
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider_modal"></div>
-        <div class="description_profil_modal">
-          <h3>Description</h3>
-          <p>
-            Issue d'un bachelor Chef de Projet Événementiel j'ai appris à
-            communiquer et travailler en équipe. Créative, j'apprécie l'UX/UI
-            design mais j'aime encore plus être capable de mettre en application
-            mes idées définitives ! C'est pour cette raison que j'ai intégré la
-            formation “Développeur web et web mobile” chez NextDev !
-          </p>
-        </div>
-        <div class="divider_modal"></div>
-        <div class="project_profil_modal">
-          <h3>Projet</h3>
-          <p>
-            Suite à la formation j'aimerais poursuivre mes études avec une
-            alternance d'1 an dans une entreprise avec laquelle je partage mes
-            valeurs et où je pourrai mettre à profit mes compétences humaines et
-            professionnelles acquises au cours de mon cursus.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="modal3" class="modal">
-      <div class="modal_content_profil">
-        <span id="btn_close3" class="close">&times;</span>
-        <div class="container_head_profil">
-          <div class="picture_profil_modal">
-            <img
-              class="photoNicolas"
-              src="images/Nicolas1.png"
-              alt="photo Nicolas"
-            />
-            <h2>Alaric Henrot</h2>
-            <div class="container_icons">
-              <div class="logoreseaux1">
-                <a href="https://github.com/SEF936">
-                  <i class="fa-brands fa-square-github"></i>
-                </a>
-              </div>
-              <div class="logoreseaux2">
-                <a href="https://www.linkedin.com/in/nicolas-lopes-21441478">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="logoreseaux3">
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider_modal"></div>
-        <div class="description_profil_modal">
-          <h3>Description</h3>
-          <p>
-            Suite à une déception en licence de biologie/microbiologie, j'ai
-            enchaîné quelques emplois alimentaires qui m'ont permis de
-            développer ma capacité d'adaptation. L'idée de me former à un métier
-            qui ferait appel à toutes mes capacités ne m'a jamais quitté, c'est
-            pour cela que je suis actuellement en formation développeur web et
-            web mobile.
-          </p>
-        </div>
-        <div class="divider_modal"></div>
-        <div class="project_profil_modal">
-          <h3>Projet</h3>
-          <p>
-            A l'issue de cette formation j'aimerai approfondir mes connaissances
-            en JS/ PHP et mon expérience avec une alternance. Tout ceci n'est
-            qu'un premier pas pour m'ouvrir la porte vers l'apprentissage d'une
-            multitude de langages informatiques.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="modal4" class="modal">
-      <div class="modal_content_profil">
-        <span id="btn_close4" class="close">&times;</span>
-        <div class="container_head_profil">
-          <div class="picture_profil_modal">
-            <img
-              class="photoNicolas"
-              src="images/Nicolas1.png"
-              alt="photo Nicolas"
-            />
-            <h2>Anne Louis</h2>
-            <div class="container_icons">
-              <div class="logoreseaux1">
-                <a href="https://github.com/SEF936">
-                  <i class="fa-brands fa-square-github"></i>
-                </a>
-              </div>
-              <div class="logoreseaux2">
-                <a href="https://www.linkedin.com/in/nicolas-lopes-21441478">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="logoreseaux3">
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider_modal"></div>
-        <div class="description_profil_modal">
-          <h3>Description</h3>
-          <p>
-            Issu d'une formation commerciale, j'ai su développer en tant que
-            manager dans la grande distribution mon Leadership pour federer et
-            atteindre avec mes équipes les objectifs communs. je suis
-            actuellement en formation diplômante avec « Nextdev » pour devenir
-            Développeur web et web mobile.
-          </p>
-        </div>
-        <div class="divider_modal"></div>
-        <div class="project_profil_modal">
-          <h3>Projet</h3>
-          <p>
-            A l'issue de la formation je souhaiterais intégrer une entreprise en
-            tant que développeur web / web mobile. Pouvoir mettre à disposition
-            mes compétences techniques en html / CSS / JS / React et MySQL ainsi
-            que mes compétences générales. Je suis également ouvert aux
-            propositions de stages.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="modal5" class="modal">
-      <div class="modal_content_profil">
-        <span id="btn_close5" class="close">&times;</span>
-        <div class="container_head_profil">
-          <div class="picture_profil_modal">
-            <img
-              class="photoNicolas"
-              src="images/Nicolas1.png"
-              alt="photo Nicolas"
-            />
-            <h2>Jean-Baptiste Noiraud</h2>
-            <div class="container_icons">
-              <div class="logoreseaux1">
-                <a href="https://github.com/SEF936">
-                  <i class="fa-brands fa-square-github"></i>
-                </a>
-              </div>
-              <div class="logoreseaux2">
-                <a href="https://www.linkedin.com/in/nicolas-lopes-21441478">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="logoreseaux3">
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider_modal"></div>
-        <div class="description_profil_modal">
-          <h3>Description</h3>
-          <p>
-            Après plusieurs années en licence et en master de japonais, j'ai
-            vécu au Japon pendant deux ans. C'est par un ami que je suis
-            actuellement en formation développeur web et mobile. Mon intérêt
-            pour le dessin et pour les arts en général fait que je préfère
-            travailler le front-end.
-          </p>
-        </div>
-        <div class="divider_modal"></div>
-        <div class="project_profil_modal">
-          <h3>Projet</h3>
-          <p>
-            J'ai pour projet de continuer en alternance à la fin de ma formation
-            et ainsi intégrer une entreprise en tant que développeur web et
-            mobile. J'ai également des projets plus personnels comme la création
-            d'un site sur l'écriture de la langue japonaise ainsi qu'une
-            application mobile d'apprentissage du japonais. J'aimerais pouvoir
-            utiliser mes connaissances acquises autour du Japon lors de ma
-            licence et de mon master.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div id="modal6" class="modal">
-      <div class="modal_content_profil">
-        <span id="btn_close6" class="close">&times;</span>
-        <div class="container_head_profil">
-          <div class="picture_profil_modal">
-            <img
-              class="photoNicolas"
-              src="images/Nicolas1.png"
-              alt="photo Nicolas"
-            />
-            <h2>Antoine Gash</h2>
-            <div class="container_icons">
-              <div class="logoreseaux1">
-                <a href="https://github.com/SEF936">
-                  <i class="fa-brands fa-square-github"></i>
-                </a>
-              </div>
-              <div class="logoreseaux2">
-                <a href="https://www.linkedin.com/in/nicolas-lopes-21441478">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </div>
-              <div class="logoreseaux3">
-                <a href="">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="divider_modal"></div>
-        <div class="description_profil_modal">
-          <h3>Description</h3>
-          <p>
-            Issu d'une formation commerciale, j'ai su développer en tant que
-            manager dans la grande distribution mon Leadership pour federer et
-            atteindre avec mes équipes les objectifs communs. je suis
-            actuellement en formation diplômante avec « Nextdev » pour devenir
-            Développeur web et web mobile.
-          </p>
-        </div>
-        <div class="divider_modal"></div>
-        <div class="project_profil_modal">
-          <h3>Projet</h3>
-          <p>
-            A l'issue de la formation je souhaiterais intégrer une entreprise en
-            tant que développeur web / web mobile. Pouvoir mettre à disposition
-            mes compétences techniques en html / CSS / JS / React et MySQL ainsi
-            que mes compétences générales. Je suis également ouvert aux
-            propositions de stages.
-          </p>
-        </div>
-      </div>
-    </div>
-
+    <div class="container_modal_profils"></div>
     <!--Form -->
-    <div class="mainFormBody">
-      <div class="mainForm">
-        <span class="close">&times;</span>
+    <div class="mainFormBody" id="form99">
+        <div class="mainForm"> 
+      
+            <span class="close" id="close99">&times;</span>
 
-        <h3>Formulaire de contact</h3>
-        <div class="form">
-          <div class="nameFirstname">
-            <div class="name">
-              <label for="name">Nom</label>
-              <input
-                type="text"
-                placeholder="Tapez votre nom"
-                required
-                id="name"
-              />
-            </div>
+            <h3>Formulaire de contact</h3>
+            <div class="form">
+                    
+                <div class="nameFirstname">
+                    <div class="name">
+                        <label for="name">Nom</label>
+                        <input type="text" placeholder="Tapez votre nom" required id="name" />
+                    </div>
 
-            <div class="firstname">
-              <label for="firstname">Prénom</label>
-              <input
-                type="text"
-                placeholder="Tapez votre prénom"
-                required
-                id="name"
-              />
-            </div>
-          </div>
+                    <div class="firstname">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" placeholder="Tapez votre prénom" required id="firstname" />
+                    </div>
+                </div>
+
+                <div class="Email">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="Tapez votre adresse E-mail" required id="email" />
+                </div>
 
           <div class="Email">
             <label for="email">E-mail</label>
@@ -527,14 +197,15 @@
             />
           </div>
 
+
           <div class="Message">
             <label for="message">Message</label>
             <textarea id="message" placeholder="Tapez votre message"></textarea>
           </div>
-
-          <div class="Button">
-            <button type="submit">ENVOYER</button>
+          <div class="Button" id="button99">
+             <button type="submit">ENVOYER</button>   
           </div>
+            </div>
         </div>
       </div>
     </div>
