@@ -1,10 +1,6 @@
 
 
-next.addEventListener("click", () => {
-    slider.scrollBy({
-    top: 0,     
-    left: card.offsetWidth,     
-    behavior : "smooth"});  });
+
 
 /****************mobile*****************/
 const slider = document.querySelector('.gallery');
@@ -45,6 +41,12 @@ slider.scrollBy({
     behavior : "smooth"});
 });
 
+next.addEventListener("click", () => {
+    slider.scrollBy({
+    top: 0,     
+    left: card.offsetWidth,     
+    behavior : "smooth"});  });
+
 
 
 /********************Profils content *********************** */
@@ -52,9 +54,10 @@ slider.scrollBy({
 
 const profils = [
   {
-    name:"Nicolas LOPES",
+    name:"Nicolas Lopes",
     caracteristiques: "Fédérateur, engagé et disponible Nicolas met à profit son savoir-faire pour atteindre les objectif fixés",
     img:"images/Nicolas1.webp",
+    alt:"photo profil Nicolas Lopes",
     modalId:"modal1",
     mail:"lopes_nico@yahoo.fr",
     git:"https://github.com/SEF936",
@@ -66,6 +69,7 @@ const profils = [
     name:"Charlotte Charrier",
     caracteristiques: "Dynamique, motivée et curieuse j'adore travailler en groupe. Cela me pousse à donner le meilleur de moi-même et mener le projet encore plus loin !",
     img:"images/Photo-Charlotte1.webp",
+    alt:"photo profil Charlotte Charrier",
     modalId:"modal2",
     mail:"charlotte.charrier97@gmail.com",
     git:"https://github.com/ChaCharrier",
@@ -77,6 +81,7 @@ const profils = [
     name:"Alaric Henrot",
     caracteristiques: "Tenace, rigoureux et toujours très impliqué dans ce que je fais, je ne ménage pas mes efforts pour obtenir des résultats.",
     img:"images/Alaric1.webp",
+    alt:"photo profil Alaric Henrot",
     modalId:"modal3",
     mail:"alaric.henrot@gmail.com",
     git:"https://github.com/Alaaric",
@@ -88,6 +93,7 @@ const profils = [
     name:"Anne Louis",
     caracteristiques: "",
     img:"",
+    alt:"photo profil Anne Louis",
     modalId:"modal4",
     mail:"anne.louis51100@gmail.com",
     git:"https://github.com/AnneL51100",
@@ -99,6 +105,7 @@ const profils = [
     name:"Jean-Baptiste Noiraud",
     caracteristiques: "Motivé et toujours impliqué dans mon travail afin d'atteindre mon objectif. Le travail en groupe me permet d'avoir un autre point de vue sur moi.",
     img:"images/jean-Baptiste1.webp",
+    alt:"photo profil Jean-Baptiste Noiraud",
     modalId:"modal5",
     mail:"jean.noiraud@gmail.com",
     git:"https://github.com/jbaptiste51",
@@ -110,6 +117,7 @@ const profils = [
     name:"Antoine Gash",
     caracteristiques: "Fédérateur, engagé et disponible Nicolas met à profit son savoir-faire pour atteindre les objectif fixés",
     img:"images/Nicolas1.webp",
+    alt:"photo profil Antoine",
     modalId: "modal6",
     mail: "lopes_nico@yahoo.fr",
     git: "https://github.com/SEF936",
@@ -130,7 +138,7 @@ for (let i = 0; i < profils.length; i++) {
   <span id="btn_close1" class="close_modal_profil" >&times;</span>
   <div class="container_head_profil">
     <div class="picture_profil_modal">
-      <img class="photoNicolas" src=${profils[i].img} alt="photo Profil"/>
+      <img class="photoNicolas" src=${profils[i].img} alt=${profils[i].alt}/>
       <h2>${profils[i].name}</h2>
       <div class="container_icons">
         <div class="logoreseaux1">
@@ -226,49 +234,20 @@ window.onclick=function(e){
         modalForm.style.display='none';
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-window.onclick = function(event) {
-    if (event.target === modalProfil6) {
-        modalProfil6.style.display = "none";
-    }
-}
-
 /**********************************footer contact*********************************/
 
-for (var clickButton of
-    document.getElementsByClassName("Button"))
-    clickButton.addEventListener("click", alertMessage);
-    function alertMessage() {
-       alert("Merci pour votre message ! Nous vous répondrons dès que possible !");
-    }
-
-/*var*/
-
-    const modal = document.getElementsByClassName("form");
-    const contact = document.getElementsByClassName("contact");
+    const contact = document.querySelector(".contact");
     const span = document.getElementsByClassName("close")[0];
 
 /* When the user clicks the button, open the modal*/ 
-contact.addEventListener("click", alertMessage);{
-    modal.style.display = "block";
-  }
+contact.addEventListener("click", () =>{
+     modalForm.style.display = "block";
+  })
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
+    if (event.target == modalForm) {
+        modalForm.style.display = "none";
     }
   }
 
