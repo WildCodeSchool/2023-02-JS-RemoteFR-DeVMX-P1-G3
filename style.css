@@ -284,10 +284,9 @@ header h1{
 .carrousel-block {
     display: flex;
     align-items: center;
-    /*background-color: rgba(131, 131, 126, 0.658);*/
     margin: 2rem auto;
     position: relative;
-    max-width: 50rem;
+    max-width: 100vw;
 }
 
 .gallery {
@@ -300,19 +299,26 @@ header h1{
 	overflow: scroll;
 	scroll-snap-type: both mandatory;
 	scroll-padding: 1rem;
-    margin: auto;
-    height: 32rem;
-
+  margin: auto;
+  height: 32rem;
+  scrollbar-width: none;
 }
 .gallery::-webkit-scrollbar {
   display: none;
 }
 .button {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background-color: var(--second-color);
-    display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  display: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 
@@ -326,6 +332,10 @@ header h1{
 	display: inline-block;
 	border-radius: 3px;
 	font-size: 0;
+}
+.card-container:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 768px) {
     .gallery {
