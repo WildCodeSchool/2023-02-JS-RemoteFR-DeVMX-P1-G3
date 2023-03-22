@@ -1,6 +1,9 @@
 
 /****************mobile*****************/
 const slider = document.querySelector('.gallery');
+const next = document.getElementById("next-btn");
+const previous = document.getElementById("previous-btn");
+const card = document.querySelector(".card-container");
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -29,6 +32,12 @@ slider.addEventListener('mousemove', e => {
 });
 /***********************desktop*******************/
 
+previous.addEventListener("click", () =>{
+slider.scrollBy({
+    top: 0,
+    left: -(card.offsetWidth),
+    behavior : "smooth"});
+});
 
 
 
