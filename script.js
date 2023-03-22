@@ -1,4 +1,50 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+next.addEventListener("click", () => {
+    slider.scrollBy({
+    top: 0,     
+    left: card.offsetWidth,     
+    behavior : "smooth"});  });
+
 /****************mobile*****************/
 const slider = document.querySelector('.gallery');
 const next = document.getElementById("next-btn");
