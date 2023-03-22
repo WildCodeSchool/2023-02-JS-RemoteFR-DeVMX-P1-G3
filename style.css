@@ -234,7 +234,7 @@ header h1{
     border-radius: 10px;
     
   }
-  img{
+  .card-profil img{
     height: 8rem;
     width: 8rem;
     margin-top: 3rem;
@@ -491,7 +491,6 @@ header h1{
   width: 20rem;
   font-size: 1.5rem;
   margin-right: 1.2rem;
-  margin-bottom: 0rem;
   text-align: center;
 }
  
