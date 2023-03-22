@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap%27");
 
 * {
-    box-sizing: border-box;
-    --main-color: #1d3354;
-    --second-color: #90d8f6;
-    --text-color: white;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  --main-color: #1d3354;
+  --second-color: #90d8f6;
+  --text-color: white;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -40,6 +40,7 @@ h1 {
     text-align: center;
     font-size: 3rem;
     text-shadow: 1px 1px 2px var(--main-color);
+
 }
 
 h2 {
@@ -59,16 +60,14 @@ h4 {
 }
 
 p {
-    font-size: 0.8rem;
-    color: var(--text-color);
+  font-size: 0.8rem;
+  color: var(--text-color);
 }
-
-
-
 
 /* HEADER */
 
 header {
+
     width: 100%;
     height: 20rem;
     background-image: url(images/photo_nextbook.webp);
@@ -103,6 +102,7 @@ header h1{
   font-weight: bold;
 }
 
+
 .logoNextmoveBanner {
   margin: auto;
   width: 15rem
@@ -129,7 +129,7 @@ header h1{
   margin-top: 2rem;
   font-size: 2rem;
   color: var(--main-color);
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
@@ -230,66 +230,62 @@ header h1{
   }
 }
 
-
 /* ****************************************************** */
 
 /***********************************cards******************************************/
-.card-profil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    object-fit: cover;
-    background-color: #1d3354;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    
-  }
-  .card-profil img{
-    height: 8rem;
-    width: 8rem;
-    margin-top: 3rem;
-    border-radius: 50%;
-  }
-  
-  .card-profil-1{
-    margin-left: 0px;
-  }
-  
-  .description-profil{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-  
-  }
-  .description-profil h2{
-    font-size: 2rem;
-    margin-top: 2rem;
-  }
-  .description-profil p {
-    display: none;
-    white-space: normal;
-    text-align: center;
-    padding: 0 2rem;
-    font-size: 1rem;
-    margin-top: 1rem;
-    
-  }
-  .card-profil button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    padding: 0.5rem;
-    background-color: #90d8f6;
-    color: #1d3354;
-    border: none;
-    border-radius: 5px;
-    width: 5rem;    
-    margin-top: 1.5rem;
-  }
+.card-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  background-color: #1d3354;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+img {
+  height: 8rem;
+  width: 8rem;
+  margin-top: 3rem;
+  border-radius: 50%;
+}
+
+.card-profil-1 {
+  margin-left: 0px;
+}
+
+.description-profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+}
+.description-profil h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.description-profil p {
+  display: none;
+  white-space: normal;
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.card-profil button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #90d8f6;
+  color: #1d3354;
+  border: none;
+  border-radius: 5px;
+  width: 5rem;
+  margin-top: 1.5rem;
+}
 
 /******************************************carousel********************************/
 .carrousel-block {
@@ -332,112 +328,111 @@ header h1{
   user-select: none;
 }
 
-
 .active {
-	scroll-snap-type: unset;
+  scroll-snap-type: unset;
 }
 
 .card-container {
   list-style: none;
-	scroll-snap-align: center;
-	display: inline-block;
-	border-radius: 3px;
-	font-size: 0;
+  scroll-snap-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
 }
 .card-container:hover {
   transform: scale(1.05);
   transition: all 0.5s ease;
 }
 @media screen and (min-width: 768px) {
-    .gallery {
-        width: 70vw;
-        grid-template-columns: repeat(6, 50%);
-    }
-    .carrousel-block{
-        max-width: 70vw;
-    }
-    .button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 6rem;
-        position: absolute;
-    }
-    #previous-btn {
-        left: -4.2rem;
-        padding-right: 1.2rem;
-        padding-bottom: 1rem;
-    }
-    #next-btn {
-        right: -4.2rem;
-        padding-right: 0.8rem;
-        padding-bottom: 1rem;
-    }
-    /***************nico************/
-    .description-profil h2{
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
-      .description-profil p {
-          display: flex;
-          font-size: 1rem;
-          height: 8rem;
-          align-items: center;
-      }
-      .card-profil button{
-          display: flex;
-          margin-top: 0rem;
-      }
-      .divider_card{
-        display: flex;
-        margin-top: 0rem;
-        align-items: center;
-        width: 70%;
-      }
-      
-      .divider_card::before,
-      .divider_card::after {
-        content: '';
-        flex-grow: 1;
-        height: 2px;
-        background-color: #90d8f6;
-      }
+  .gallery {
+    width: 70vw;
+    grid-template-columns: repeat(6, 50%);
+  }
+  .carrousel-block {
+    max-width: 70vw;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    position: absolute;
+  }
+  #previous-btn {
+    left: -4.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  #next-btn {
+    right: -4.2rem;
+    padding-right: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  /***************nico************/
+  .description-profil h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .description-profil p {
+    display: flex;
+    font-size: 1rem;
+    height: 8rem;
+    align-items: center;
+  }
+  .card-profil button {
+    display: flex;
+    margin-top: 0rem;
+  }
+  .divider_card {
+    display: flex;
+    margin-top: 0rem;
+    align-items: center;
+    width: 70%;
+  }
+
+  .divider_card::before,
+  .divider_card::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: #90d8f6;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .gallery {
-        width: 70vw;
-        grid-template-columns: repeat(6, 33%);
-    }
-    .carrousel-block{
-        max-width: 70vw;
-    }
-    /*********** nico ************/
-    .description-profil h2{
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
-      .description-profil p {
-          display: flex;
-          font-size: 1rem;
-          height: 8rem;
-          align-items: center;
-      }
-      .card-profil button{
-          display: flex;
-      }
-      .divider_card{
-        display: flex;
-        align-items: center;
-        width: 70%;
-      }
-      
-      .divider_card::before,
-      .divider_card::after {
-        content: '';
-        flex-grow: 1;
-        height: 2px;
-        background-color: #90d8f6;
-      }
+  .gallery {
+    width: 70vw;
+    grid-template-columns: repeat(6, 33%);
+  }
+  .carrousel-block {
+    max-width: 70vw;
+  }
+  /*********** nico ************/
+  .description-profil h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .description-profil p {
+    display: flex;
+    font-size: 1rem;
+    height: 8rem;
+    align-items: center;
+  }
+  .card-profil button {
+    display: flex;
+  }
+  .divider_card {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .divider_card::before,
+  .divider_card::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: #90d8f6;
+  }
 }
 
 /*************************Modal Profil *************************/
@@ -451,10 +446,8 @@ header h1{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4); 
-
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .modal_content_profil{
   background-color:#1d3354;
@@ -482,8 +475,8 @@ header h1{
   text-decoration: none;
   cursor: pointer;
 }
- 
-.container_head_profil{
+
+.container_head_profil {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -492,9 +485,9 @@ header h1{
   
 }
 
-.picture_profil_modal{
+.picture_profil_modal {
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   display: flex;
   align-items: center;
   
@@ -514,29 +507,32 @@ header h1{
   margin-right: 1.2rem;
   text-align: center;
 }
- 
+
 .container_icons {
   display: flex;
-  width:100%;
-  flex-direction:row;
+  width: 100%;
+  flex-direction: row;
   justify-content: space-around;
   padding-right: 1.2rem;
 }
 
-.logoreseaux1 a, .logoreseaux2 a, .logoreseaux3 a{
-  color:#90d8f6;
+.logoreseaux1 a,
+.logoreseaux2 a,
+.logoreseaux3 a {
+  color: #90d8f6;
   text-decoration: none;
-  background-color:#1d3354;
+  background-color: #1d3354;
 }
 
-.logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
+.logoreseaux1 i,
+.logoreseaux2 i,
+.logoreseaux3 i {
   font-size: 3rem;
-  background:#1d3354;
+  background: #1d3354;
   padding: 0.3rem;
 }
 
-
-.divider_modal{
+.divider_modal {
   display: flex;
   margin-left: 2.1rem;
   padding-right: 2.1rem;
@@ -547,19 +543,17 @@ header h1{
 
 .divider_modal::before,
 .divider_modal::after {
-  content: '';
+  content: "";
   flex-grow: 1;
   height: 2px;
   background-color: #90d8f6;
 }
 
-
-
 .description_profil_modal h3, .project_profil_modal h3{
   font-size: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0rem;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .description_profil_modal p, .project_profil_modal p{
@@ -604,7 +598,6 @@ header h1{
   .picture_profil_modal{
     margin-bottom: 0rem;
     width: 100%;
-  
   }
   .picture_profil_modal img {
     width: 10rem;
@@ -619,9 +612,11 @@ header h1{
     width: 4rem;
   }
 
-  .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
+  .logoreseaux1 i,
+  .logoreseaux2 i,
+  .logoreseaux3 i {
     font-size: 4rem;
-    background:#1d3354;
+    background: #1d3354;
     padding: 1rem;
   }
 
@@ -629,7 +624,8 @@ header h1{
     width: 95%;
   }
 
-  .description_profil_modal, .project_profil_modal{
+  .description_profil_modal,
+  .project_profil_modal {
     margin-right: 2rem;
     margin-left: 2rem;
   }
@@ -637,18 +633,19 @@ header h1{
     font-size: 1.5rem;
     margin-top: 1rem;
     margin-bottom: 0rem;
-    text-decoration: underline; 
+    text-decoration: underline;
   }
-  .description_profil_modal p, .project_profil_modal p{
+  .description_profil_modal p,
+  .project_profil_modal p {
     font-size: 1.2rem;
   }
-  }
+}
+
 
   @media screen and (min-width:992px){
     .modal_content_profil{
       height: 50rem;
-    
-    }
+     }
 
     .picture_profil_modal{
       flex-direction: row;
@@ -683,8 +680,8 @@ header h1{
 
 
 
-/********************************** Form ***************************************************/
 
+/********************************** Form ***************************************************/
 
 .close {
   color: #90d8f6;
@@ -692,6 +689,7 @@ header h1{
   font-size: 38px;
   font-weight: bold;
 }
+
 
 .close:hover, .close:focus {
   color: black;
@@ -756,11 +754,16 @@ textarea#message {
 .form .Button button {
   background-color: var(--second-color);
   width: 30%;
-  font-weight:  bold;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (min-width: 745px) {
+  .mainForm {
+    margin: 20% 15% 20% 15%;
+  }
 
 
 @media screen and (min-width:745px) {
@@ -780,19 +783,22 @@ textarea#message {
     flex-direction: column;
   }
 
+  .name,
+  .firstname {
+    height: 5rem;
+    width: 40%;
+  }
 }
 
-
-
-
 /*css for footer start here*/
-.li-name .name {
+
+.name-footer {
   color: var(--text-color);
   list-style: none;
   padding: 0.1rem;
 }
 
-.ul-name {
+.ul-name-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -810,7 +816,7 @@ footer {
   background-color: #1d3354;
   position: relative;
   width: 100%;
-  bottom:0;
+  bottom: 0;
   left: 0;
   right: 0;
   height: auto;
@@ -824,7 +830,7 @@ footer {
   text-align: center;
 }
 
-.li-name {
+.li-name-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -849,7 +855,7 @@ footer {
   }
 
   .footer-head img {
-    margin-left: 5rem;
+    margin: auto;
   }
 
   h4 {
@@ -869,22 +875,24 @@ footer {
     justify-content: center;
   }
 
-  .ul-name {
+  .ul-name-footer {
     display: flex;
     flex-direction: row;
   }
-  .li-name {
+  .li-name-footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
   }
-  li-name .name {
+  
+  .name-footer {
     list-style-type: none;
     display: flex;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
+
 /*media query for tab footer end here*/
 
 /*media query for desktop footer start here*/
@@ -901,6 +909,11 @@ footer {
     left: 0;
     right: 0;
   }
+
+  .footer-head img {
+    margin: auto;
+  }
+
   h4 {
     padding: 2rem 2rem;
   }
@@ -912,16 +925,16 @@ footer {
   a:hover {
     color: darkgoldenrod;
   }
-  .ul-name {
+  .ul-name-footer {
     display: flex;
     flex-direction: row;
   }
-  .li-name {
+  .li-name-footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
   }
-  .name {
+  .name-footer {
     list-style-type: none;
     display: flex;
     padding-left: 0.5rem;
@@ -929,5 +942,3 @@ footer {
   }
 }
 /*media query for desktop footer end here*/
-
-

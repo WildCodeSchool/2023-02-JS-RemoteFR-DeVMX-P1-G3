@@ -239,4 +239,36 @@ window.onclick=function(e){
 
 
 
+window.onclick = function(event) {
+    if (event.target === modalProfil6) {
+        modalProfil6.style.display = "none";
+    }
+}
+
+/**********************************footer contact*********************************/
+
+for (var clickButton of
+    document.getElementsByClassName("Button"))
+    clickButton.addEventListener("click", alertMessage);
+    function alertMessage() {
+       alert("Merci pour votre message ! Nous vous répondrons dès que possible !");
+    }
+
+/*var*/
+
+    const modal = document.getElementsByClassName("form");
+    const contact = document.getElementsByClassName("contact");
+    const span = document.getElementsByClassName("close")[0];
+
+/* When the user clicks the button, open the modal*/ 
+contact.addEventListener("click", alertMessage);{
+    modal.style.display = "block";
+  }
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 
