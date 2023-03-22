@@ -1,44 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 next.addEventListener("click", () => {
     slider.scrollBy({
     top: 0,     
@@ -77,19 +38,12 @@ slider.addEventListener('mousemove', e => {
   slider.scrollLeft = scrollLeft - walk;
 });
 /***********************desktop*******************/
-
 previous.addEventListener("click", () =>{
 slider.scrollBy({
     top: 0,
     left: -(card.offsetWidth),
     behavior : "smooth"});
 });
-
-
-
-
-
-
 
 
 
@@ -239,3 +193,50 @@ window.onclick = function (e){
         e.target.style.display = 'none';
     }
 };
+
+/******************************Form************************************/
+
+
+
+const buttonform= document.getElementById("button99");
+const closeForm= document.getElementById("close99");
+const modalForm=document.getElementById("form99");
+
+buttonform.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const formName = document.getElementById("name").value;
+    const formFirstName = document.getElementById("firstname").value;
+    const formEmail = document.getElementById("email").value;
+    const formObjet = document.getElementById("objet").value;
+    const formMessage = document.getElementById("message").value;
+
+    if (formName !== "" && formFirstName !== "" && formEmail !== "" && formObjet !== ""&& formMessage !== ""){
+        alert(`Merci ${formName} pour votre message. L'équipe Nextmove vous répondra dans les plus brefs délais.`);
+    }else {
+        alert (`Le formulaire est incomplet. L'équipe Nextmove vous remercie de bien vouloir le compléter.`)};
+    }
+);
+
+closeForm.addEventListener('click', ()=>{
+    modalForm.style.display='none';
+})
+
+window.onclick=function(e){
+    if (e.target.className === 'mainFormBody'){
+        modalForm.style.display='none';
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
