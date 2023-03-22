@@ -634,113 +634,99 @@ header h1{
 
 /********************************** Form ***************************************************/
 
-
 .close {
-    color: #90d8f6;
-    float: right;
-    font-size: 38px;
-    font-weight: bold;
+  color: #90d8f6;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
 }
 
 .close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .mainFormBody {
-    display: none;
-    border-radius: 10px;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    
+  display: none; /*Hidden by default*/
+  position: fixed;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
 }
 
 .mainForm {
-    background-color: var(--main-color);
-    color: var(--text-color);
-    border: 5px solid #888;
-    border-radius: 10px;
-    padding: 2%;
-    margin: 5% 10%;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: 1px solid var(--second-color);
+  border-radius: 10px;
+  padding: 2%;
+  margin: 10%;
 }
 
 .mainForm h3 {
-    text-align: center;
-    height : 5rem;
+  text-align: center;
+  height : 5rem;
 }
 
 .nameFirstname {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-.name, .firstname {
-   height: 5rem;
-   width: 100%;
+.nameFirstname .name, .nameFirstname .firstname {
+  padding: 3% 0;
 }
 
-
-input#name, input#email, input#objet,textarea#message, button {
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    height: 2rem;
+input#name, input#firstname, input#email, input#objet,textarea#message, button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
 }
-
-
 
 .Email, .objet, .Message{
-    padding: 3% 0;
+  padding: 3% 0;
 }
 
-
 textarea#message {
-    height: 10rem;
+  height: 10rem;
 }
 
 .form .Button {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
 }
-
-
 
 .form .Button button {
-    background-color: var(--second-color);
-    width: 30%;
-    font-weight:  bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--second-color);
+  width: 30%;
+  font-weight:  bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
 
 
 @media screen and (min-width:745px) {
-    .mainForm {
-        margin: 20% 15% 20% 15%;
-    }
+  .mainForm {
+    margin: 15%;
+  }
 
-
-
-
-    .nameFirstname {
+  .nameFirstname {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+  }
 
-
-
-.name, .firstname {
-   height: 5rem;
-   width: 40%;
-}
+  .nameFirstname .name,.nameFirstname .firstname {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
 
 }
 
@@ -748,7 +734,7 @@ textarea#message {
 
 
 /*css for footer start here*/
-.name {
+.li-name .name {
   color: var(--text-color);
   list-style: none;
   padding: 0.1rem;
@@ -840,7 +826,7 @@ footer {
     justify-content: space-around;
     flex-direction: row;
   }
-  .name {
+  li-name .name {
     list-style-type: none;
     display: flex;
     padding-left: 0.5rem;
