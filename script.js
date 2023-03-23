@@ -187,6 +187,7 @@ btnModalProfil.forEach(btn => {
     btn.addEventListener('click', () => {
         const modal = btn.getAttribute('data-target');
         document.getElementById(modal).style.display = 'block';
+        document.getElementById(modal).style.animation = "popmodal 2s";
     });
 });
 closeModalProfil.forEach(btn => {
@@ -242,6 +243,7 @@ window.onclick=function(e){
 /* When the user clicks the button, open the modal*/ 
 contact.addEventListener("click", () =>{
      modalForm.style.display = "block";
+     modalForm.style.animation = "popmodal 2s";
   })
 
 // When the user clicks anywhere outside of the modal, close it

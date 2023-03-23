@@ -931,3 +931,7 @@ footer {
   }
 }
 /*media query for desktop footer end here*/
+@keyframes popmodal {
+  0% {top: -100%}
+  100% { top: 0}
+}
