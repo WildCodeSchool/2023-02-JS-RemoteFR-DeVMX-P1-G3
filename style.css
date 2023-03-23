@@ -48,17 +48,6 @@ h2 {
   color: var(--text-color);
 }
 
-h3 {
-  font-size: 2rem;
-  color: var(--text-color);
-  margin: 10px auto;
-}
-
-/*color for h4 is next book 2023*/
-h4 {
-  color: white;
-}
-
 p {
   font-size: 0.8rem;
   color: var(--text-color);
@@ -845,7 +834,9 @@ footer {
   flex-direction: column;
   text-align: center;
 }
-
+.li-name-footer h3 {
+  color: var(--text-color);
+}
 /*media query for tab footer start here*/
 
 @media screen and (min-width: 768px) {
@@ -863,11 +854,11 @@ footer {
   }
 
   .footer-head img {
-    margin: auto;
+    margin-left: 1rem ;
   }
 
-  h4 {
-    padding: 2rem 2rem;
+  .li-name-footer h3 {
+    padding: 1rem;
   }
 
   .contact {
@@ -921,7 +912,7 @@ footer {
     margin: auto;
   }
 
-  h4 {
+  .li-name-footer h3 {
     padding: 2rem 2rem;
   }
   .contact {

@@ -142,17 +142,17 @@ for (let i = 0; i < profils.length; i++) {
       <h2>${profils[i].name}</h2>
       <div class="container_icons">
         <div class="logoreseaux1">
-            <a href="${profils[i].git}">
+            <a href="${profils[i].git}" target="_blank">
               <i class="fa-brands fa-square-github"></i>
             </a>
         </div>
         <div class="logoreseaux2">
-          <a href="${profils[i].linkedin}8">
+          <a href="${profils[i].linkedin}8" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
       </div>
       <div class="logoreseaux3">
-        <a href="mailto:${profils[i].mail}">
+        <a href="mailto:${profils[i].mail}" target="_blank">
           <i class="fa-solid fa-envelope"></i>
         </a>
     </div>
@@ -175,7 +175,7 @@ for (let i = 0; i < profils.length; i++) {
 </div>`);
 }
 
-containerModals.innerHTML = modalProfilsArray.join(" ")
+containerModals.innerHTML = modalProfilsArray.join(" ");
 
 /*****************************modal1********************************* */
 
@@ -196,12 +196,6 @@ closeModalProfil.forEach(btn => {
         
     });
 });
-
-window.onclick = function (e){
-    if (e.target.className === 'modal'){
-        e.target.style.display = 'none';
-    }
-};
 
 /******************************Form************************************/
 
@@ -234,6 +228,9 @@ window.onclick=function(e){
     if (e.target.className === 'mainFormBody'){
         modalForm.style.display='none';
     }
+    if (e.target.className === 'modal'){
+      e.target.style.display = 'none';
+  }
 }
 /**********************************footer contact*********************************/
 
