@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap%27");
 
 * {
-    box-sizing: border-box;
-    --main-color: #1d3354;
-    --second-color: #90d8f6;
-    --text-color: white;
-    line-height: 1.5;
-    font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+  --main-color: #1d3354;
+  --second-color: #90d8f6;
+  --text-color: white;
+  line-height: 1.5;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -33,15 +33,14 @@ body {
 a:hover {
   color: var(--main-color);
 }
-*/
+
 h1 {
-    font-size: 3rem;
     color: var(--text-color);
     margin: 0;
     text-align: center;
-    position:relative;
-    top: 1.1rem;
+    font-size: 3rem;
     text-shadow: 1px 1px 2px var(--main-color);
+
 }
 
 h2 {
@@ -61,45 +60,34 @@ h4 {
 }
 
 p {
-    font-size: 0.8rem;
-    color: var(--text-color);
+  font-size: 0.8rem;
+  color: var(--text-color);
 }
-
-
-
 
 /* HEADER */
 
 header {
+
     width: 100%;
-    height: 30rem;
-    background-image: url("https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg");
+    height: 20rem;
+    background-image: url(images/photo_nextbook.webp);
     background-size: cover;
     background-position: top;
-}
-
-
-
-header h1{
-  font-size: 3rem;
-  color: var(--text-color);
-  margin: 0;
-  text-align: center;
-  position:relative;
-  top: 1.1rem;
-  text-shadow: 1px 1px 2px var(--main-color);
 }
 
 .bannerContainer {
     display:flex;
     flex-direction:column;
     align-items: center;
+    height: 10rem;
 }
-.infoNextmoveContainer{
-  display: flex;
-  flex-direction: column;
-  height: 6rem;
-  
+
+header h1{
+  font-size: 3rem;
+  color: var(--text-color);
+  margin: 0;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--main-color);
 }
 
 .bannerLogoContainer {
@@ -107,88 +95,93 @@ header h1{
   margin-left: 6rem;
 }
 
-.logoNextmoveBanner {
-  margin: auto;
-  width: 11rem
-}
-
 .textBanner {
   margin: auto;
   font-size: 1rem;
-  color: var(--main-color);
+  color: var(--text-color);
   font-weight: bold;
 }
 
-.entrepriseContainer{
-  height: 5rem;
+
+.logoNextmoveBanner {
+  margin: auto;
+  width: 15rem;
+  height: auto;
 }
 
-#blueRectangle {
-  background-color: #1D3354;
-  width: 100%;
-  max-height: 180px;
-  background: rgba(29, 51, 84, 0.7);
-  position: relative;
-  top: 6.2rem;
+.entrepriseContainer{
+  height: 10rem;
+  background: rgba(29, 51, 84, 0.7) ;  
+  display:flex;
+  flex-direction: column;
 }
 
 .secondLogoNextmove {
   width: 12rem;
-  position:relative;
-  bottom: 10rem;
-  left:1rem;
+  margin-left: 1rem;
+  height: auto;
 }
 
 .aboutNextmove {
-  position:relative;
-  bottom: 11rem;
   margin: 0 2rem;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
 }
 
 .nosJeunesTalents {
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-size: 2rem;
   color: var(--main-color);
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
-@media screen and (min-width: 768px) {
-  .infoNextmoveContainer{
-      display: flex;
-      flex-direction: row;
-  }
-
-  h1 {
-      font-size: 4.5rem ;
-  }
-  #blueRectangle {
-    max-height: 120px;
-    top: 10rem;
-}
-  .secondLogoNextmove {
-    
-    width: 15rem;
-    bottom:2rem;
-}
+@media screen and (min-width: 592px) {
   .aboutNextmove {
-    
-    font-size: 0.9em;
-    bottom: -3.5rem;
+    font-size: 0.9rem;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 25rem;
+  }
+  .bannerContainer {
+    height: 12.5rem;
+  }
+  header h1 {
+    font-size: 4.5rem ;
+    padding-top:1rem;
+  }
+  .bannerLogoContainer {
+    margin-top: -1.5rem;
+    margin-left: 10rem;
+  }
+  .logoNextmoveBanner {
+    width: 16rem;
+  }
+  .entrepriseContainer {
+    height: 12.5rem;
+  }
+  .secondLogoNextmove {
+    width: 15rem;
+  }
+  .aboutNextmove {
+    font-size: 1.1rem;
+  }
   .nosJeunesTalents {
     font-size: 3rem;
-    margin-top: 8rem;
-}
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    header h1 {
-        font-size: 6rem ;
+    header {
+      height: 30rem;
+    }  
+    .bannerContainer {
+      height: 15rem;
     }
-    .logoNextmoveBanner {
-      width: 15rem;
+    header h1 {
+        font-size: 5rem ;
     }
     .bannerLogoContainer {
       margin-left: 20rem;
@@ -197,97 +190,111 @@ header h1{
       font-size: 2rem;
       color: var(--text-color);
     }
-    .infoNextmoveContainer {
-      display:flex;
+    .logoNextmoveBanner{
+      width: 20rem;
     }
-    #blueRectangle {
-      max-height: 127px;
-      top: 5rem;
+    .entrepriseContainer {
+      height:15rem;
+      flex-direction: row;
     }
-    .secondLogoNextmove {
-      width: 16rem;
-      bottom:8rem;
+   .secondLogoNextmove {
+      width: 20rem;
+      height:6rem;
+      margin-top:4rem;
+      margin-left: 0.7rem;
     }
     .aboutNextmove {
-      font-size: 1.2rem;
-      bottom: 2rem;
+      margin-top:3.5%;
+      font-size: 1.4rem;
     }
     .nosJeunesTalents {
-      font-size: 5rem;
-      margin-top: 8rem;
+      font-size: 4rem;
+      margin-top: 4rem;
     }
   }
-
-
-
-/* ****************************************************** */
+@media screen and (min-width: 1265px) {
+  header h1 {
+    font-size: 6rem;
+    padding: 0;
+  }
+  .bannerLogoContainer {
+    margin-top: -2.5rem;
+  }
+  .logoNextmoveBanner {
+    width: 28rem;
+  }
+  .secondLogoNextmove{
+    width:25rem;
+  }
+  .aboutNextmove{
+    font-size:1.6rem;
+    margin-top:3.5%;
+  }
+}
 
 /***********************************cards******************************************/
-.card-profil{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    object-fit: cover;
-    background-color: #1d3354;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    
-  }
-  img{
-    height: 8rem;
-    width: 8rem;
-    margin-top: 3rem;
-    border-radius: 50%;
-  }
-  
-  .card-profil-1{
-    margin-left: 0px;
-  }
-  
-  .description-profil{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
-  
-  }
-  .description-profil h2{
-    font-size: 2rem;
-    margin-top: 2rem;
-  }
-  .description-profil p {
-    display: none;
-    white-space: normal;
-    text-align: center;
-    padding: 0 2rem;
-    font-size: 1rem;
-    margin-top: 1rem;
-    
-  }
-  .card-profil button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    padding: 0.5rem;
-    background-color: #90d8f6;
-    color: #1d3354;
-    border: none;
-    border-radius: 5px;
-    width: 5rem;    
-    margin-top: 1.5rem;
-  }
+.card-profil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  object-fit: cover;
+  background-color: #1d3354;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.card-profil img {
+  height: 8rem;
+  width: 8rem;
+  margin-top: 3rem;
+  border-radius: 50%;
+}
+
+.card-profil-1 {
+  margin-left: 0px;
+}
+
+.description-profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+}
+.description-profil h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+.description-profil p {
+  display: none;
+  white-space: normal;
+  text-align: center;
+  padding: 0 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.card-profil button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  padding: 0.5rem;
+  background-color: #90d8f6;
+  color: #1d3354;
+  border: none;
+  border-radius: 5px;
+  width: 5rem;
+  margin-top: 1.5rem;
+  cursor: pointer;
+}
 
 /******************************************carousel********************************/
 .carrousel-block {
     display: flex;
     align-items: center;
-    /*background-color: rgba(131, 131, 126, 0.658);*/
     margin: 2rem auto;
     position: relative;
-    max-width: 50rem;
+    max-width: 100vw;
 }
 
 .gallery {
@@ -300,123 +307,133 @@ header h1{
 	overflow: scroll;
 	scroll-snap-type: both mandatory;
 	scroll-padding: 1rem;
-    margin: auto;
-    height: 32rem;
-
+  margin: auto;
+  height: 32rem;
+  scrollbar-width: none;
 }
 .gallery::-webkit-scrollbar {
   display: none;
 }
 .button {
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    background-color: var(--second-color);
-    display: none;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: var(--main-color);
+  display: none;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
-
 .active {
-	scroll-snap-type: unset;
+  scroll-snap-type: unset;
 }
 
 .card-container {
   list-style: none;
-	scroll-snap-align: center;
-	display: inline-block;
-	border-radius: 3px;
-	font-size: 0;
+  scroll-snap-align: center;
+  display: inline-block;
+  border-radius: 3px;
+  font-size: 0;
+}
+.card-container:hover {
+  transform: scale(1.05);
+  transition: all 0.5s ease;
 }
 @media screen and (min-width: 768px) {
-    .gallery {
-        width: 70vw;
-        grid-template-columns: repeat(6, 50%);
-    }
-    .carrousel-block{
-        max-width: 70vw;
-    }
-    .button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 6rem;
-        position: absolute;
-    }
-    #previous-btn {
-        left: -4.2rem;
-        padding-right: 1.2rem;
-        padding-bottom: 1rem;
-    }
-    #next-btn {
-        right: -4.2rem;
-        padding-right: 0.8rem;
-        padding-bottom: 1rem;
-    }
-    /***************nico************/
-    .description-profil h2{
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
-      .description-profil p {
-          display: flex;
-          font-size: 1rem;
-          height: 8rem;
-          align-items: center;
-      }
-      .card-profil button{
-          display: flex;
-          margin-top: 0rem;
-      }
-      .divider_card{
-        display: flex;
-        margin-top: 0rem;
-        align-items: center;
-        width: 70%;
-      }
-      
-      .divider_card::before,
-      .divider_card::after {
-        content: '';
-        flex-grow: 1;
-        height: 2px;
-        background-color: #90d8f6;
-      }
+  .gallery {
+    width: 70vw;
+    grid-template-columns: repeat(6, 50%);
+  }
+  .carrousel-block {
+    max-width: 70vw;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6rem;
+    position: absolute;
+  }
+  #previous-btn {
+    left: -4.2rem;
+    padding-right: 1.2rem;
+    padding-bottom: 1rem;
+  }
+  #next-btn {
+    right: -4.2rem;
+    padding-right: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  /***************nico************/
+  .description-profil h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .description-profil p {
+    display: flex;
+    font-size: 1rem;
+    height: 8rem;
+    align-items: center;
+  }
+  .card-profil button {
+    display: flex;
+    margin-top: 0rem;
+  }
+  .divider_card {
+    display: flex;
+    margin-top: 0rem;
+    align-items: center;
+    width: 70%;
+  }
+
+  .divider_card::before,
+  .divider_card::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: #90d8f6;
+  }
 }
 @media screen and (min-width: 1200px) {
-    .gallery {
-        width: 70vw;
-        grid-template-columns: repeat(6, 33%);
-    }
-    .carrousel-block{
-        max-width: 70vw;
-    }
-    /*********** nico ************/
-    .description-profil h2{
-        font-size: 1.6rem;
-        margin-top: 1rem;
-    }
-      .description-profil p {
-          display: flex;
-          font-size: 1rem;
-          height: 8rem;
-          align-items: center;
-      }
-      .card-profil button{
-          display: flex;
-      }
-      .divider_card{
-        display: flex;
-        align-items: center;
-        width: 70%;
-      }
-      
-      .divider_card::before,
-      .divider_card::after {
-        content: '';
-        flex-grow: 1;
-        height: 2px;
-        background-color: #90d8f6;
-      }
+  .gallery {
+    width: 70vw;
+    grid-template-columns: repeat(6, 33%);
+  }
+  .carrousel-block {
+    max-width: 70vw;
+  }
+  /*********** nico ************/
+  .description-profil h2 {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+  .description-profil p {
+    display: flex;
+    font-size: 1rem;
+    height: 8rem;
+    align-items: center;
+  }
+  .card-profil button {
+    display: flex;
+  }
+  .divider_card {
+    display: flex;
+    align-items: center;
+    width: 70%;
+  }
+
+  .divider_card::before,
+  .divider_card::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background-color: #90d8f6;
+  }
 }
 
 /*************************Modal Profil *************************/
@@ -430,181 +447,209 @@ header h1{
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4); 
-
+  background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .modal_content_profil{
   background-color:#1d3354;
   color:#fff;
-  margin: 20% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #90d8f6;
   border-radius: 10px;
-  width: 80%;
+  width: 90%;
+  height:48rem ;
 }
 
-.close{
+.close_modal_profil{
   color: #90d8f6;
   float: right;
   font-size: 38px;
   font-weight: bold;
+  margin-top: -1rem;
 }
   
-.close:hover,
-.close:focus
+.close_modal_profil:hover,
+.close_modal_profil:focus
  {
   color: black;
   text-decoration: none;
   cursor: pointer;
 }
- 
-.container_head_profil{
+
+.container_head_profil {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 5rem;
-  padding-left: 1.2rem;
+  padding-left: 2.5rem;
+  
 }
 
-.picture_profil_modal{
+.picture_profil_modal {
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
   display: flex;
   align-items: center;
-  margin-bottom: 2rem;
+  
 }
 
 .picture_profil_modal img {
+  margin-top: 2rem;
   margin-right: 1.2rem;
-  width: 10rem;
-  height: 10rem;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
 }
 
 .picture_profil_modal h2{
-  font-size: 2rem;
+  width: 20rem;
+  font-size: 1.5rem;
   margin-right: 1.2rem;
+  text-align: center;
 }
- 
+
 .container_icons {
   display: flex;
-  width:100%;
-  flex-direction:row;
+  width: 100%;
+  flex-direction: row;
   justify-content: space-around;
   padding-right: 1.2rem;
 }
 
-.logoreseaux1 a, .logoreseaux2 a, .logoreseaux3 a{
-  color:#90d8f6;
+.logoreseaux1 a,
+.logoreseaux2 a,
+.logoreseaux3 a {
+  color: #90d8f6;
   text-decoration: none;
-  background-color:#1d3354;
+  background-color: #1d3354;
 }
 
-.logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
+.logoreseaux1 i,
+.logoreseaux2 i,
+.logoreseaux3 i {
   font-size: 3rem;
-  background:#1d3354;
+  background: #1d3354;
   padding: 0.3rem;
 }
 
-
-.divider_modal{
+.divider_modal {
   display: flex;
   margin-left: 2.1rem;
   padding-right: 2.1rem;
-  margin-top: 2rem;
-  margin-bottom: 0;
+  margin-top: 1.5rem;
   align-items: center;
-  width: 80%;
+  width: 90%;
 }
 
 .divider_modal::before,
 .divider_modal::after {
-  content: '';
+  content: "";
   flex-grow: 1;
   height: 2px;
   background-color: #90d8f6;
 }
 
-.description_profil_modal,.project_profil_modal{
-  padding: 0 2rem;
-}
-
 .description_profil_modal h3, .project_profil_modal h3{
-  font-size: 2rem;
-  margin-top: 1rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
   margin-bottom: 0rem;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 .description_profil_modal p, .project_profil_modal p{
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+}
+@media screen and (min-width:576px){
+  .modal_content_profil{
+    height: 45rem;
+  }
+  
+  .picture_profil_modal img {
+    margin-top: 0rem;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  .picture_profil_modal h2{
+    font-size: 2rem;
+    width: 19rem;
+    
+  }
+  .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
+    font-size: 3.5rem;
+  }
+  .description_profil_modal h3, .project_profil_modal h3{
+    font-size: 1.2rem;
+  }
+  .description_profil_modal p, .project_profil_modal p{
+    font-size: 0.9rem;
+  }
 }
 
-@media screen and (min-width:745px){
+@media screen and (min-width:768px){
 
+  .modal_content_profil{
+    height: 50rem;
+  }
   .container_head_profil{
-    margin-top: 2rem;
+    margin-top: 0rem;
   }
 
   .picture_profil_modal{
- 
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     width: 100%;
-  
+    flex-direction: row;
   }
   .picture_profil_modal img {
+    width: 10rem;
+    height: 10rem;
     margin-right: 1.2rem;
   }
   .picture_profil_modal h2{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .container_icons{
-    width: 5rem;
+    width: 4rem;
+    flex-direction: column;
   }
 
-  .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
-    font-size: 4rem;
-    background:#1d3354;
+  .logoreseaux1 i,
+  .logoreseaux2 i,
+  .logoreseaux3 i {
+    font-size: 3rem;
+    background: #1d3354;
     padding: 1rem;
   }
 
-  .modal_content_profil{
-   
-   
-    margin: 5rem auto;
-    padding: 1.2rem;
-    width: 70%; 
-  }
-
   .divider_modal{
-    margin-left: 2.5rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    align-items: center;
-    width: 85%;
+    width: 95%;
   }
 
-  .description_profil_modal, .project_profil_modal{
+  .description_profil_modal,
+  .project_profil_modal {
     margin-right: 2rem;
     margin-left: 2rem;
   }
   .description_profil_modal h3, .project_profil_modal h3{
-    font-size: 2rem;
-    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 0rem;
-    text-decoration: underline; 
+    text-decoration: underline;
   }
-  .description_profil_modal p, .project_profil_modal p{
+  .description_profil_modal p,
+  .project_profil_modal p {
     font-size: 1.2rem;
   }
-  }
+}
 
-  @media screen and (min-width: 1045px){
+
+  @media screen and (min-width:992px){
+    .modal_content_profil{
+      height: 50rem;
+     }
+
     .picture_profil_modal{
       flex-direction: row;
       display: flex;
@@ -612,149 +657,157 @@ header h1{
       align-items: center;
       margin-bottom: 0rem;
       width: 100%;
-      padding-left: 2rem;
   }
-     
-    .picture_profil_modal h2{
-      font-size: 3rem;
-      margin-left: 2rem;
-      width: 50rem;
-  }
+  .picture_profil_modal h2{
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    width: 50rem;
+    text-align: left;
+}
+  
+  .container_icons{
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    margin-right: 2rem;
+}
 
-    .container_icons{
-      display: flex;
-      flex-direction: column;
-      width: 5rem;
-      margin-right: 5rem;
   }
-    .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
-      font-size: 4rem;
-  }
+  @media screen and (min-width:1200px){
+    .modal_content_profil{
+      height: 48rem;
+      max-height: 70rem;
+      max-width: 70rem;
+    }
   }
 
 /********************************** Form ***************************************************/
 
-
 .close {
-    color: #90d8f6;
-    float: right;
-    font-size: 38px;
-    font-weight: bold;
+  color: #90d8f6;
+  float: right;
+  font-size: 38px;
+  font-weight: bold;
 }
 
 .close:hover, .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .mainFormBody {
-    display: none;
-    border-radius: 10px;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    
+  display: none; /*Hidden by default*/
+  position: fixed;
+  overflow: auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 .mainForm {
-    background-color: var(--main-color);
-    color: var(--text-color);
-    border: 5px solid #888;
-    border-radius: 10px;
-    padding: 2%;
-    margin: 5% 10%;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  border: 1px solid var(--second-color);
+  border-radius: 10px;
+  padding: 2%;
+  margin: 10%;
 }
 
 .mainForm h3 {
-    text-align: center;
-    height : 5rem;
+  text-align: center;
+  height : 5rem;
 }
 
 .nameFirstname {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
-
-
-.name, .firstname {
-   height: 5rem;
-   width: 100%;
+.nameFirstname .name, .nameFirstname .firstname {
+  padding: 3% 0;
 }
 
+#name, #firstname, #email, #objet,#message, button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  height: 2rem;
 
-input#name, input#email, input#objet,textarea#message, button {
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    height: 2rem;
 }
-
-
 
 .Email, .objet, .Message{
-    padding: 3% 0;
+  padding: 3% 0;
 }
 
-
-textarea#message {
-    height: 10rem;
+#message {
+  height: 10rem;
 }
 
 .form .Button {
-    display: flex;
-    justify-content: center;
-    padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
 }
-
-
 
 .form .Button button {
-    background-color: var(--second-color);
-    width: 30%;
-    font-weight:  bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--second-color);
+  width: 30%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
-
-
-
 @media screen and (min-width:745px) {
-    .mainForm {
-        margin: 20% 15% 20% 15%;
-    }
-
-
-
-
-    .nameFirstname {
+  .mainForm {
+    margin: 15%;
+  }
+  .mainForm h3 {
+    font-size: 3rem;
+  }
+  .nameFirstname {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .nameFirstname .name,.nameFirstname .firstname {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+  }
+  #name, #firstname, #email, #objet,#message, button {
+    height: 3rem;
+    
+  }
+  .form .Button button {
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+  #message {
+    height: 15rem;
+  }
 }
-
-
-
-.name, .firstname {
-   height: 5rem;
-   width: 40%;
-}
-
-}
-
-
-
 
 /*css for footer start here*/
-.name {
+
+.name-footer {
   color: var(--text-color);
   list-style: none;
   padding: 0.1rem;
 }
 
-.ul-name {
+.ul-name-footer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -772,7 +825,7 @@ footer {
   background-color: #1d3354;
   position: relative;
   width: 100%;
-  bottom:0;
+  bottom: 0;
   left: 0;
   right: 0;
   height: auto;
@@ -786,16 +839,16 @@ footer {
   text-align: center;
 }
 
-.li-name {
+.li-name-footer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
 }
-/*css for footer end here*/
 
 /*media query for tab footer start here*/
+
 @media screen and (min-width: 768px) {
   footer {
     display: flex;
@@ -811,7 +864,7 @@ footer {
   }
 
   .footer-head img {
-    margin-left: 5rem;
+    margin: auto;
   }
 
   h4 {
@@ -819,7 +872,7 @@ footer {
   }
 
   .contact {
-    margin: 0 5rem 0 1rem;
+    margin: 0 0.9rem 0 0.5rem;
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -831,25 +884,26 @@ footer {
     justify-content: center;
   }
 
-  .ul-name {
+  .ul-name-footer {
     display: flex;
     flex-direction: row;
   }
-  .li-name {
+  .li-name-footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
   }
-  .name {
+  
+  .name-footer {
     list-style-type: none;
     display: flex;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
-/*media query for tab footer end here*/
 
 /*media query for desktop footer start here*/
+
 @media screen and (min-width: 1024px) {
   footer {
     display: flex;
@@ -863,6 +917,11 @@ footer {
     left: 0;
     right: 0;
   }
+
+  .footer-head img {
+    margin: auto;
+  }
+
   h4 {
     padding: 2rem 2rem;
   }
@@ -874,22 +933,26 @@ footer {
   a:hover {
     color: darkgoldenrod;
   }
-  .ul-name {
+  .ul-name-footer {
     display: flex;
     flex-direction: row;
   }
-  .li-name {
+  .li-name-footer {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
   }
-  .name {
+  .name-footer {
     list-style-type: none;
     display: flex;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
 }
-/*media query for desktop footer end here*/
 
+/*animation*/
 
+@keyframes popmodal {
+  0% {top: 100%}
+  100% { top: 0}
+}
