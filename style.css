@@ -92,7 +92,7 @@ header h1{
 
 .bannerLogoContainer {
   display:flex;
-  margin-left: 7rem;
+  margin-left: 6rem;
 }
 
 .textBanner {
@@ -105,7 +105,8 @@ header h1{
 
 .logoNextmoveBanner {
   margin: auto;
-  width: 15rem
+  width: 15rem;
+  height: auto;
 }
 
 .entrepriseContainer{
@@ -118,6 +119,7 @@ header h1{
 .secondLogoNextmove {
   width: 12rem;
   margin-left: 1rem;
+  height: auto;
 }
 
 .aboutNextmove {
@@ -243,7 +245,7 @@ header h1{
   height: 100%;
   border-radius: 10px;
 }
-img {
+.card-profil img {
   height: 8rem;
   width: 8rem;
   margin-top: 3rem;
@@ -573,7 +575,7 @@ img {
 
   .picture_profil_modal h2{
     font-size: 2rem;
-    width: 25rem;
+    width: 19rem;
     
   }
   .logoreseaux1 i, .logoreseaux2 i, .logoreseaux3 i{
@@ -590,7 +592,7 @@ img {
 @media screen and (min-width:768px){
 
   .modal_content_profil{
-    height: 58rem;
+    height: 50rem;
   }
   .container_head_profil{
     margin-top: 0rem;
@@ -599,6 +601,7 @@ img {
   .picture_profil_modal{
     margin-bottom: 0rem;
     width: 100%;
+    flex-direction: row;
   }
   .picture_profil_modal img {
     width: 10rem;
@@ -611,12 +614,13 @@ img {
 
   .container_icons{
     width: 4rem;
+    flex-direction: column;
   }
 
   .logoreseaux1 i,
   .logoreseaux2 i,
   .logoreseaux3 i {
-    font-size: 4rem;
+    font-size: 3rem;
     background: #1d3354;
     padding: 1rem;
   }
@@ -706,6 +710,7 @@ img {
   background-color: rgba(0, 0, 0, 0.4);
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .mainForm {
@@ -731,18 +736,19 @@ img {
   padding: 3% 0;
 }
 
-input#name, input#firstname, input#email, input#objet,textarea#message, button {
+#name, #firstname, #email, #objet,#message, button {
   width: 100%;
   border-radius: 5px;
   border: none;
   height: 2rem;
+
 }
 
 .Email, .objet, .Message{
   padding: 3% 0;
 }
 
-textarea#message {
+#message {
   height: 10rem;
 }
 
@@ -759,13 +765,18 @@ textarea#message {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 @media screen and (min-width:745px) {
   .mainForm {
     margin: 15%;
   }
-
+  .mainForm h3 {
+    font-size: 3rem;
+  }
   .nameFirstname {
     display: flex;
     flex-direction: row;
@@ -776,6 +787,21 @@ textarea#message {
     width: 40%;
     display: flex;
     flex-direction: column;
+  }
+  label {
+    line-height: 2.2rem;
+    font-size: 1.5rem;
+  }
+  #name, #firstname, #email, #objet,#message, button {
+    height: 3rem;
+    
+  }
+  .form .Button button {
+    line-height: 3rem;
+    font-size: 1.5rem;
+  }
+  #message {
+    height: 15rem;
   }
 }
 
@@ -852,7 +878,7 @@ footer {
   }
 
   .contact {
-    margin: 0 5rem 0 1rem;
+    margin: 0 0.9rem 0 0.5rem;
     color: black;
     font-weight: bold;
     text-decoration: none;
@@ -932,6 +958,6 @@ footer {
 }
 /*media query for desktop footer end here*/
 @keyframes popmodal {
-  0% {top: -100%}
+  0% {top: 100%}
   100% { top: 0}
 }

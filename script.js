@@ -92,7 +92,7 @@ const profils = [
   {
     name:"Anne Louis",
     caracteristiques: "",
-    img:"",
+    img:"images/Photo-Anne.webp",
     alt:"photo profil Anne Louis",
     modalId:"modal4",
     mail:"anne.louis51100@gmail.com",
@@ -175,7 +175,7 @@ for (let i = 0; i < profils.length; i++) {
 </div>`);
 }
 
-containerModals.innerHTML = modalProfilsArray
+containerModals.innerHTML = modalProfilsArray.join(" ")
 
 /*****************************modal1********************************* */
 
