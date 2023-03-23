@@ -97,9 +97,9 @@ const profils = [
     modalId:"modal4",
     mail:"anne.louis51100@gmail.com",
     git:"https://github.com/AnneL51100",
-    linkedin:"#",
-    description:"",
-    projet:""
+    linkedin:"linkedin.com/in/anne-louis-3326b826b",
+    description:"De formation supérieure, j'ai évolué en toute autonomie dans différents environnements internationaux, industriels et marketing exigeants. Fortement intéressée par le développement web full stack, je suis actuellement en formation dans ce domaine.",
+    projet:"Après la formation, mon objectif serait de réaliser un stage ou une alternance, afin d'approfondir mes connaissances en HTML, CSS, JavaScript... Je reste à votre disposition et à l'écoute de toute proposition. A titre plus personnel, fortement investie dans le monde associatif, je souhaiterais également réaliser un site Web, pour l’association dans laquelle j'œuvre."
   },
   {
     name:"Jean-Baptiste Noiraud",
@@ -245,11 +245,3 @@ contact.addEventListener("click", () =>{
      modalForm.style.display = "block";
      modalForm.style.animation = "popmodal 2s";
   })
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modalForm) {
-        modalForm.style.display = "none";
-    }
-  }
-
