@@ -491,11 +491,10 @@ header h1{
   justify-content: center;
   display: flex;
   align-items: center;
-  
+  margin-top: 1.5rem;
 }
 
 .picture_profil_modal img {
-  margin-top: 2rem;
   margin-right: 1.2rem;
   width: 7rem;
   height: 7rem;
