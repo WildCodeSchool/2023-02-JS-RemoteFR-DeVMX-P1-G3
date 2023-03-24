@@ -1,56 +1,5 @@
 
-
-
-
-/****************mobile*****************/
-const slider = document.querySelector('.gallery');
-const next = document.getElementById("next-btn");
-const previous = document.getElementById("previous-btn");
-const card = document.querySelector(".card-container");
-let isDown = false;
-let startX;
-let scrollLeft;
-
-slider.addEventListener('mousedown', e => {
-  isDown = true;
-  slider.classList.add('active');
-  startX = e.pageX - slider.offsetLeft;
-  scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener('mouseleave', _ => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mouseup', _ => {
-  isDown = false;
-  slider.classList.remove('active');
-});
-slider.addEventListener('mousemove', e => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - slider.offsetLeft;
-  const SCROLL_SPEED = 3;
-  const walk = (x - startX) * SCROLL_SPEED;
-  slider.scrollLeft = scrollLeft - walk;
-});
-/***********************desktop*******************/
-previous.addEventListener("click", () =>{
-slider.scrollBy({
-    top: 0,
-    left: -(card.offsetWidth),
-    behavior : "smooth"});
-});
-
-next.addEventListener("click", () => {
-    slider.scrollBy({
-    top: 0,     
-    left: card.offsetWidth,     
-    behavior : "smooth"});  });
-
-
-
 /********************Profils content *********************** */
-
 
 const profils = [
   {
@@ -61,7 +10,7 @@ const profils = [
     modalId:"modal1",
     mail:"lopes_nico@yahoo.fr",
     git:"https://github.com/SEF936",
-    linkedin:"https://www.linkedin.com/in/nicolas-lopes-21441478",
+    linkedin:"https://www.linkedin.com/in/nicolas-lopes-21441478/",
     description:"Issu d'une formation commerciale, j'ai su développer en tant que manager dans la grande distribution mon Leadership  pour federer et atteindre avec mes équipes les objectifs communs. Je suis actuellement en formation diplômante avec « Nextdev » pour devenir Développeur web et web mobile.",
     projet:"A l'issue de la formation je souhaiterais intégrer une entreprise en tant que développeur web / web mobile. Pouvoir mettre à disposition mes compétences techniques en html / CSS / JS / React et MySQL ainsi que mes compétences générales. Je suis également ouvert aux propositions de stages."
   },
@@ -91,13 +40,13 @@ const profils = [
   },
   {
     name:"Anne Louis",
-    caracteristiques: "",
+    caracteristiques: "Rigoureuse, persévérante et orientée sur le résultat, j'aime le travail en équipe et échanger les connaissances.",
     img:"images/Photo-Anne.webp",
     alt:"photo profil Anne Louis",
     modalId:"modal4",
     mail:"anne.louis51100@gmail.com",
     git:"https://github.com/AnneL51100",
-    linkedin:"linkedin.com/in/anne-louis-3326b826b",
+    linkedin:"https://www.linkedin.com/in/anne-louis-3326b826b/",
     description:"De formation supérieure, j'ai évolué en toute autonomie dans différents environnements internationaux, industriels et marketing exigeants. Fortement intéressée par le développement web full stack, je suis actuellement en formation dans ce domaine.",
     projet:"Après la formation, mon objectif serait de réaliser un stage ou une alternance, afin d'approfondir mes connaissances en HTML, CSS, JavaScript... Je reste à votre disposition et à l'écoute de toute proposition. A titre plus personnel, fortement investie dans le monde associatif, je souhaiterais également réaliser un site Web, pour l’association dans laquelle j'œuvre."
   },
@@ -121,7 +70,7 @@ const profils = [
     modalId: "modal6",
     mail: "lopes_nico@yahoo.fr",
     git: "https://github.com/SEF936",
-    linkedin: "https://www.linkedin.com/in/nicolas-lopes-21441478",
+    linkedin: "https://www.linkedin.com/in/nicolas-lopes-21441478/",
     description: "Issu d'une formation commerciale, j'ai su développer en tant que manager dans la grande distribution mon Leadership  pour federer et atteindre avec mes équipes les objectifs communs. Je suis actuellement en formation diplômante avec « Nextdev » pour devenir Développeur web et web mobile.",
     projet:"A l'issue de la formation je souhaiterais intégrer une entreprise en tant que développeur web / web mobile. Pouvoir mettre à disposition mes compétences techniques en html / CSS / JS / React et MySQL ainsi que mes compétences générales. Je suis également ouvert aux propositions de stages."
   }
@@ -177,29 +126,7 @@ for (let i = 0; i < profils.length; i++) {
 
 containerModals.innerHTML = modalProfilsArray.join(" ");
 
-/*****************************modal1********************************* */
-
-const modalProfil = document.querySelectorAll('.modal');
-const closeModalProfil = document.querySelectorAll('.close_modal_profil');
-const btnModalProfil = document.querySelectorAll('.btn_open_profil');
-
-btnModalProfil.forEach(btn => {
-    btn.addEventListener('click', () => {
-        const modal = btn.getAttribute('data-target');
-        document.getElementById(modal).style.display = 'block';
-        document.getElementById(modal).style.animation = "popmodal 2s";
-    });
-});
-closeModalProfil.forEach(btn => {
-    btn.addEventListener('click', () => {
-        let modal = (btn.closest('.modal').style.display = 'none');
-        
-    });
-});
-
 /******************************Form************************************/
-
-
 
 const buttonform= document.getElementById("button99");
 const closeForm= document.getElementById("close99");
@@ -242,3 +169,91 @@ contact.addEventListener("click", () =>{
      modalForm.style.display = "block";
      modalForm.style.animation = "popmodal 2s";
   })
+
+
+/**************Carousel***************/
+const slider = document.querySelector('.gallery');
+
+const cardsArray = [];
+for (let i = 0; i < profils.length; i++) {
+  cardsArray.push(`<li class="card-container">
+  <div class="card-profil card-profil-1" draggable="false">
+  <img class="image-profil" src=${profils[i].img} alt="">
+  <div class="description-profil">
+      <h2 class="title-profil">${profils[i].name}</h2>
+      <div class="divider_card"></div>
+      <p class="text-profil">${profils[i].caracteristiques}</p>
+  </div>
+  <button class="btn_open_profil" data-target=${profils[i].modalId}>More</button>
+</div>
+</li>`)
+ 
+}
+slider.innerHTML = cardsArray.join("");
+
+
+const next = document.getElementById("next-btn");
+const previous = document.getElementById("previous-btn");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener('mousedown', e => {
+  isDown = true;
+  slider.classList.add('active');
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener('mouseleave', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mouseup', _ => {
+  isDown = false;
+  slider.classList.remove('active');
+});
+slider.addEventListener('mousemove', e => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const SCROLL_SPEED = 3;
+  const walk = (x - startX) * SCROLL_SPEED;
+  slider.scrollLeft = scrollLeft - walk;
+});
+
+const card = document.querySelector(".card-container");
+
+previous.addEventListener("click", () =>{
+  slider.scrollBy({
+      top: 0,
+      left: -(card.offsetWidth),
+      behavior : "smooth"});
+  });
+  
+  next.addEventListener("click", () => {
+      slider.scrollBy({
+      top: 0,     
+      left: card.offsetWidth,     
+      behavior : "smooth"});  });
+
+
+/*****************************modal1********************************* */
+      
+const modalProfil = document.querySelectorAll('.modal');
+const closeModalProfil = document.querySelectorAll('.close_modal_profil');
+const btnModalProfil = document.querySelectorAll('.btn_open_profil');
+
+btnModalProfil.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const modal = btn.getAttribute('data-target');
+        document.getElementById(modal).style.display = 'block';
+        document.getElementById(modal).style.animation = "popmodal 2s";
+    });
+});
+closeModalProfil.forEach(btn => {
+    btn.addEventListener('click', () => {
+        let modal = (btn.closest('.modal').style.display = 'none');
+        
+    });
+});
