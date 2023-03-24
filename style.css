@@ -255,12 +255,12 @@ header h1{
   margin-top: 2rem;
 }
 .description-profil p {
-  display: none;
   white-space: normal;
   text-align: center;
   padding: 0 2rem;
   font-size: 1rem;
   margin-top: 1rem;
+  height: 120px;
 }
 .card-profil button {
   display: flex;
@@ -273,7 +273,6 @@ header h1{
   border: none;
   border-radius: 5px;
   width: 5rem;
-  margin-top: 1.5rem;
   cursor: pointer;
 }
 
