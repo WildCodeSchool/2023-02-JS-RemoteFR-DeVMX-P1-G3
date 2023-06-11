@@ -62,18 +62,6 @@ const profils = [
     description:"Après plusieurs années en licence et en master de japonais, j'ai vécu au Japon pendant deux ans. C'est par un ami que je suis actuellement en formation développeur web et mobile. Mon intérêt pour le dessin et pour les arts en général fait que je préfère travailler le front-end.",
     projet:"J'ai pour projet de continuer en alternance à la fin de ma formation et ainsi intégrer une entreprise en tant que développeur web et mobile. J'ai également des projets plus personnels comme la création d'un site sur l'écriture de la langue japonaise ainsi qu'une application mobile d'apprentissage du japonais. J'aimerais pouvoir utiliser mes connaissances acquises autour du Japon lors de ma licence et de mon master."
   },
-  {
-    name:"Antoine Gash",
-    caracteristiques: "Fédérateur, engagé et disponible Nicolas met à profit son savoir-faire pour atteindre les objectif fixés",
-    img:"images/Nicolas1.webp",
-    alt:"photo profil Antoine",
-    modalId: "modal6",
-    mail: "lopes_nico@yahoo.fr",
-    git: "https://github.com/SEF936",
-    linkedin: "https://www.linkedin.com/in/nicolas-lopes-21441478/",
-    description: "Issu d'une formation commerciale, j'ai su développer en tant que manager dans la grande distribution mon Leadership  pour federer et atteindre avec mes équipes les objectifs communs. Je suis actuellement en formation diplômante avec « Nextdev » pour devenir Développeur web et web mobile.",
-    projet:"A l'issue de la formation je souhaiterais intégrer une entreprise en tant que développeur web / web mobile. Pouvoir mettre à disposition mes compétences techniques en html / CSS / JS / React et MySQL ainsi que mes compétences générales. Je suis également ouvert aux propositions de stages."
-  }
 ];
 
 
